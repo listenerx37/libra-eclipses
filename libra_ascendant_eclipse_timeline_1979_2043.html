@@ -1,0 +1,1246 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Libra Ascendant Eclipse Timeline, 1979–2043</title>
+<style>
+:root {
+  --bg:#080b14; --panel:#111827; --panel2:#0f172a; --text:#e5e7eb; --muted:#9ca3af;
+  --border:#263244; --gold:#f6c453; --blue:#86b7ff; --pink:#f0a1ff; --green:#9be7c5;
+}
+* { box-sizing:border-box; }
+body { margin:0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; background: radial-gradient(circle at 20% 0%, #1d2541 0, transparent 35%), radial-gradient(circle at 90% 10%, #3a2245 0, transparent 28%), var(--bg); color:var(--text); }
+header { padding:42px 24px 22px; max-width:1180px; margin:auto; }
+h1 { margin:0; font-size:clamp(28px,4vw,48px); letter-spacing:-.04em; line-height:1.05; }
+.subtitle { color:var(--muted); margin-top:12px; max-width:820px; line-height:1.55; }
+.badges { display:flex; gap:10px; flex-wrap:wrap; margin-top:20px; }
+.badge { border:1px solid var(--border); background:rgba(17,24,39,.78); padding:8px 12px; border-radius:999px; color:#d1d5db; font-size:13px; }
+main { max-width:1180px; margin:0 auto 60px; padding:0 24px; }
+.controls { display:flex; gap:12px; flex-wrap:wrap; margin:18px 0 24px; padding:14px 0 6px; }
+input, select { background:#0b1220; border:1px solid var(--border); color:var(--text); border-radius:12px; padding:11px 12px; min-width:180px; }
+section { background:rgba(15,23,42,.74); border:1px solid var(--border); border-radius:22px; padding:22px; margin-bottom:22px; box-shadow: 0 16px 40px rgba(0,0,0,.25); }
+h2 { margin-top:0; }
+.table-wrap { overflow:auto; border-radius:18px; border:1px solid var(--border); margin-top:4px; }
+table { width:100%; border-collapse:collapse; min-width:850px; background:rgba(8,11,20,.55); }
+th, td { padding:13px 14px; border-bottom:1px solid rgba(38,50,68,.72); text-align:left; }
+th { position:sticky; top:0; background:#111827; color:#f9fafb; font-size:12px; letter-spacing:.08em; text-transform:uppercase; z-index:1; box-shadow: 0 1px 0 rgba(38,50,68,.9); }
+td { color:#e5e7eb; font-size:14px; }
+tr:hover { background:rgba(134,183,255,.08); }
+.year { color:var(--gold); font-weight:700; }
+.pill { display:inline-block; border-radius:999px; padding:5px 9px; font-size:12px; border:1px solid var(--border); }
+.solar { background:rgba(246,196,83,.12); color:#ffe3a1; }
+.lunar { background:rgba(134,183,255,.13); color:#cfe1ff; }
+.note { color:var(--muted); font-size:13px; line-height:1.55; }
+footer { color:var(--muted); font-size:12px; line-height:1.5; margin-top:16px; }
+mark { background:rgba(246,196,83,.22); color:#ffeab7; padding:0 3px; border-radius:4px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Libra Ascendant Eclipse Timeline<br><span style="color:var(--gold)">1979–2043</span></h1>
+  <p class="subtitle">A reference page showing every solar and lunar eclipse from 1979 through 2043, mapped to whole-sign houses for a Libra Ascendant. Sign labels use the tropical zodiac convention used in our eclipse discussions.</p>
+  <div class="badges"><span class="badge">Libra = 1st house</span><span class="badge">Aries = 7th house</span><span class="badge">Taurus = 8th house</span><span class="badge">Leo/Aquarius = 11th/5th axis</span></div>
+</header>
+<main>
+<section>
+  <h2>Filter the table</h2>
+  <div class="controls">
+    <input id="search" placeholder="Search sign, house, axis..." />
+    <select id="year"><option value="">All years</option><option value="1979">1979</option><option value="1980">1980</option><option value="1981">1981</option><option value="1982">1982</option><option value="1983">1983</option><option value="1984">1984</option><option value="1985">1985</option><option value="1986">1986</option><option value="1987">1987</option><option value="1988">1988</option><option value="1989">1989</option><option value="1990">1990</option><option value="1991">1991</option><option value="1992">1992</option><option value="1993">1993</option><option value="1994">1994</option><option value="1995">1995</option><option value="1996">1996</option><option value="1997">1997</option><option value="1998">1998</option><option value="1999">1999</option><option value="2000">2000</option><option value="2001">2001</option><option value="2002">2002</option><option value="2003">2003</option><option value="2004">2004</option><option value="2005">2005</option><option value="2006">2006</option><option value="2007">2007</option><option value="2008">2008</option><option value="2009">2009</option><option value="2010">2010</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016">2016</option><option value="2017">2017</option><option value="2018">2018</option><option value="2019">2019</option><option value="2020">2020</option><option value="2021">2021</option><option value="2022">2022</option><option value="2023">2023</option><option value="2024">2024</option><option value="2025">2025</option><option value="2026">2026</option><option value="2027">2027</option><option value="2028">2028</option><option value="2029">2029</option><option value="2030">2030</option><option value="2031">2031</option><option value="2032">2032</option><option value="2033">2033</option><option value="2034">2034</option><option value="2035">2035</option><option value="2036">2036</option><option value="2037">2037</option><option value="2038">2038</option><option value="2039">2039</option><option value="2040">2040</option><option value="2041">2041</option><option value="2042">2042</option><option value="2043">2043</option></select>
+    <select id="house"><option value="">All houses</option><option value="1st">1st — Libra</option><option value="2nd">2nd — Scorpio</option><option value="3rd">3rd — Sagittarius</option><option value="4th">4th — Capricorn</option><option value="5th">5th — Aquarius</option><option value="6th">6th — Pisces</option><option value="7th">7th — Aries</option><option value="8th">8th — Taurus</option><option value="9th">9th — Gemini</option><option value="10th">10th — Cancer</option><option value="11th">11th — Leo</option><option value="12th">12th — Virgo</option></select>
+  </div>
+  <div class="table-wrap"><table id="eclipseTable">
+    <thead><tr><th>Year</th><th>Date</th><th>Eclipse</th><th>Sign</th><th>House</th><th>Axis</th></tr></thead>
+    <tbody>
+<tr data-year="1979" data-house="6th" data-sign="Pisces" data-axis="Pisces–Virgo (6th/12th)">
+  <td class="year">1979</td><td>1979-02-26</td><td><span class="pill solar">Total Solar</span></td><td>Pisces</td><td>6th</td><td>Pisces–Virgo (6th/12th)</td>
+</tr>
+
+<tr data-year="1979" data-house="12th" data-sign="Virgo" data-axis="Virgo–Pisces (12th/6th)">
+  <td class="year">1979</td><td>1979-03-13</td><td><span class="pill lunar">Partial Lunar</span></td><td>Virgo</td><td>12th</td><td>Virgo–Pisces (12th/6th)</td>
+</tr>
+
+<tr data-year="1979" data-house="11th" data-sign="Leo" data-axis="Leo–Aquarius (11th/5th)">
+  <td class="year">1979</td><td>1979-08-22</td><td><span class="pill solar">Annular Solar</span></td><td>Leo</td><td>11th</td><td>Leo–Aquarius (11th/5th)</td>
+</tr>
+
+<tr data-year="1979" data-house="6th" data-sign="Pisces" data-axis="Pisces–Virgo (6th/12th)">
+  <td class="year">1979</td><td>1979-09-06</td><td><span class="pill lunar">Total Lunar</span></td><td>Pisces</td><td>6th</td><td>Pisces–Virgo (6th/12th)</td>
+</tr>
+
+<tr data-year="1980" data-house="5th" data-sign="Aquarius" data-axis="Aquarius–Leo (5th/11th)">
+  <td class="year">1980</td><td>1980-02-16</td><td><span class="pill solar">Total Solar</span></td><td>Aquarius</td><td>5th</td><td>Aquarius–Leo (5th/11th)</td>
+</tr>
+
+<tr data-year="1980" data-house="12th" data-sign="Virgo" data-axis="Virgo–Pisces (12th/6th)">
+  <td class="year">1980</td><td>1980-03-01</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Virgo</td><td>12th</td><td>Virgo–Pisces (12th/6th)</td>
+</tr>
+
+<tr data-year="1980" data-house="5th" data-sign="Aquarius" data-axis="Aquarius–Leo (5th/11th)">
+  <td class="year">1980</td><td>1980-07-27</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Aquarius</td><td>5th</td><td>Aquarius–Leo (5th/11th)</td>
+</tr>
+
+<tr data-year="1980" data-house="11th" data-sign="Leo" data-axis="Leo–Aquarius (11th/5th)">
+  <td class="year">1980</td><td>1980-08-10</td><td><span class="pill solar">Annular Solar</span></td><td>Leo</td><td>11th</td><td>Leo–Aquarius (11th/5th)</td>
+</tr>
+
+<tr data-year="1980" data-house="6th" data-sign="Pisces" data-axis="Pisces–Virgo (6th/12th)">
+  <td class="year">1980</td><td>1980-08-26</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Pisces</td><td>6th</td><td>Pisces–Virgo (6th/12th)</td>
+</tr>
+
+<tr data-year="1981" data-house="11th" data-sign="Leo" data-axis="Leo–Aquarius (11th/5th)">
+  <td class="year">1981</td><td>1981-01-20</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Leo</td><td>11th</td><td>Leo–Aquarius (11th/5th)</td>
+</tr>
+
+<tr data-year="1981" data-house="5th" data-sign="Aquarius" data-axis="Aquarius–Leo (5th/11th)">
+  <td class="year">1981</td><td>1981-02-04</td><td><span class="pill solar">Annular Solar</span></td><td>Aquarius</td><td>5th</td><td>Aquarius–Leo (5th/11th)</td>
+</tr>
+
+<tr data-year="1981" data-house="4th" data-sign="Capricorn" data-axis="Capricorn–Cancer (4th/10th)">
+  <td class="year">1981</td><td>1981-07-17</td><td><span class="pill lunar">Partial Lunar</span></td><td>Capricorn</td><td>4th</td><td>Capricorn–Cancer (4th/10th)</td>
+</tr>
+
+<tr data-year="1981" data-house="11th" data-sign="Leo" data-axis="Leo–Aquarius (11th/5th)">
+  <td class="year">1981</td><td>1981-07-31</td><td><span class="pill solar">Total Solar</span></td><td>Leo</td><td>11th</td><td>Leo–Aquarius (11th/5th)</td>
+</tr>
+
+<tr data-year="1982" data-house="10th" data-sign="Cancer" data-axis="Cancer–Capricorn (10th/4th)">
+  <td class="year">1982</td><td>1982-01-09</td><td><span class="pill lunar">Total Lunar</span></td><td>Cancer</td><td>10th</td><td>Cancer–Capricorn (10th/4th)</td>
+</tr>
+
+<tr data-year="1982" data-house="5th" data-sign="Aquarius" data-axis="Aquarius–Leo (5th/11th)">
+  <td class="year">1982</td><td>1982-01-25</td><td><span class="pill solar">Partial Solar</span></td><td>Aquarius</td><td>5th</td><td>Aquarius–Leo (5th/11th)</td>
+</tr>
+
+<tr data-year="1982" data-house="9th" data-sign="Gemini" data-axis="Gemini–Sagittarius (9th/3rd)">
+  <td class="year">1982</td><td>1982-06-21</td><td><span class="pill solar">Partial Solar</span></td><td>Gemini</td><td>9th</td><td>Gemini–Sagittarius (9th/3rd)</td>
+</tr>
+
+<tr data-year="1982" data-house="4th" data-sign="Capricorn" data-axis="Capricorn–Cancer (4th/10th)">
+  <td class="year">1982</td><td>1982-07-06</td><td><span class="pill lunar">Total Lunar</span></td><td>Capricorn</td><td>4th</td><td>Capricorn–Cancer (4th/10th)</td>
+</tr>
+
+<tr data-year="1982" data-house="10th" data-sign="Cancer" data-axis="Cancer–Capricorn (10th/4th)">
+  <td class="year">1982</td><td>1982-07-20</td><td><span class="pill solar">Partial Solar</span></td><td>Cancer</td><td>10th</td><td>Cancer–Capricorn (10th/4th)</td>
+</tr>
+
+<tr data-year="1982" data-house="3rd" data-sign="Sagittarius" data-axis="Sagittarius–Gemini (3rd/9th)">
+  <td class="year">1982</td><td>1982-12-15</td><td><span class="pill solar">Partial Solar</span></td><td>Sagittarius</td><td>3rd</td><td>Sagittarius–Gemini (3rd/9th)</td>
+</tr>
+
+<tr data-year="1982" data-house="10th" data-sign="Cancer" data-axis="Cancer–Capricorn (10th/4th)">
+  <td class="year">1982</td><td>1982-12-30</td><td><span class="pill lunar">Total Lunar</span></td><td>Cancer</td><td>10th</td><td>Cancer–Capricorn (10th/4th)</td>
+</tr>
+
+<tr data-year="1983" data-house="9th" data-sign="Gemini" data-axis="Gemini–Sagittarius (9th/3rd)">
+  <td class="year">1983</td><td>1983-06-11</td><td><span class="pill solar">Total Solar</span></td><td>Gemini</td><td>9th</td><td>Gemini–Sagittarius (9th/3rd)</td>
+</tr>
+
+<tr data-year="1983" data-house="4th" data-sign="Capricorn" data-axis="Capricorn–Cancer (4th/10th)">
+  <td class="year">1983</td><td>1983-06-25</td><td><span class="pill lunar">Partial Lunar</span></td><td>Capricorn</td><td>4th</td><td>Capricorn–Cancer (4th/10th)</td>
+</tr>
+
+<tr data-year="1983" data-house="3rd" data-sign="Sagittarius" data-axis="Sagittarius–Gemini (3rd/9th)">
+  <td class="year">1983</td><td>1983-12-04</td><td><span class="pill solar">Annular Solar</span></td><td>Sagittarius</td><td>3rd</td><td>Sagittarius–Gemini (3rd/9th)</td>
+</tr>
+
+<tr data-year="1983" data-house="9th" data-sign="Gemini" data-axis="Gemini–Sagittarius (9th/3rd)">
+  <td class="year">1983</td><td>1983-12-20</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Gemini</td><td>9th</td><td>Gemini–Sagittarius (9th/3rd)</td>
+</tr>
+
+<tr data-year="1984" data-house="2nd" data-sign="Scorpio" data-axis="Scorpio–Taurus (2nd/8th)">
+  <td class="year">1984</td><td>1984-05-15</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Scorpio</td><td>2nd</td><td>Scorpio–Taurus (2nd/8th)</td>
+</tr>
+
+<tr data-year="1984" data-house="9th" data-sign="Gemini" data-axis="Gemini–Sagittarius (9th/3rd)">
+  <td class="year">1984</td><td>1984-05-30</td><td><span class="pill solar">Annular Solar</span></td><td>Gemini</td><td>9th</td><td>Gemini–Sagittarius (9th/3rd)</td>
+</tr>
+
+<tr data-year="1984" data-house="3rd" data-sign="Sagittarius" data-axis="Sagittarius–Gemini (3rd/9th)">
+  <td class="year">1984</td><td>1984-06-13</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Sagittarius</td><td>3rd</td><td>Sagittarius–Gemini (3rd/9th)</td>
+</tr>
+
+<tr data-year="1984" data-house="8th" data-sign="Taurus" data-axis="Taurus–Scorpio (8th/2nd)">
+  <td class="year">1984</td><td>1984-11-08</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Taurus</td><td>8th</td><td>Taurus–Scorpio (8th/2nd)</td>
+</tr>
+
+<tr data-year="1984" data-house="3rd" data-sign="Sagittarius" data-axis="Sagittarius–Gemini (3rd/9th)">
+  <td class="year">1984</td><td>1984-11-22</td><td><span class="pill solar">Total Solar</span></td><td>Sagittarius</td><td>3rd</td><td>Sagittarius–Gemini (3rd/9th)</td>
+</tr>
+
+<tr data-year="1985" data-house="2nd" data-sign="Scorpio" data-axis="Scorpio–Taurus (2nd/8th)">
+  <td class="year">1985</td><td>1985-05-04</td><td><span class="pill lunar">Total Lunar</span></td><td>Scorpio</td><td>2nd</td><td>Scorpio–Taurus (2nd/8th)</td>
+</tr>
+
+<tr data-year="1985" data-house="8th" data-sign="Taurus" data-axis="Taurus–Scorpio (8th/2nd)">
+  <td class="year">1985</td><td>1985-05-19</td><td><span class="pill solar">Partial Solar</span></td><td>Taurus</td><td>8th</td><td>Taurus–Scorpio (8th/2nd)</td>
+</tr>
+
+<tr data-year="1985" data-house="8th" data-sign="Taurus" data-axis="Taurus–Scorpio (8th/2nd)">
+  <td class="year">1985</td><td>1985-10-28</td><td><span class="pill lunar">Total Lunar</span></td><td>Taurus</td><td>8th</td><td>Taurus–Scorpio (8th/2nd)</td>
+</tr>
+
+<tr data-year="1985" data-house="2nd" data-sign="Scorpio" data-axis="Scorpio–Taurus (2nd/8th)">
+  <td class="year">1985</td><td>1985-11-12</td><td><span class="pill solar">Total Solar</span></td><td>Scorpio</td><td>2nd</td><td>Scorpio–Taurus (2nd/8th)</td>
+</tr>
+
+<tr data-year="1986" data-house="7th" data-sign="Aries" data-axis="Aries–Libra (7th/1st)">
+  <td class="year">1986</td><td>1986-04-09</td><td><span class="pill solar">Partial Solar</span></td><td>Aries</td><td>7th</td><td>Aries–Libra (7th/1st)</td>
+</tr>
+
+<tr data-year="1986" data-house="2nd" data-sign="Scorpio" data-axis="Scorpio–Taurus (2nd/8th)">
+  <td class="year">1986</td><td>1986-04-24</td><td><span class="pill lunar">Total Lunar</span></td><td>Scorpio</td><td>2nd</td><td>Scorpio–Taurus (2nd/8th)</td>
+</tr>
+
+<tr data-year="1986" data-house="1st" data-sign="Libra" data-axis="Libra–Aries (1st/7th)">
+  <td class="year">1986</td><td>1986-10-03</td><td><span class="pill solar">Hybrid Solar</span></td><td>Libra</td><td>1st</td><td>Libra–Aries (1st/7th)</td>
+</tr>
+
+<tr data-year="1986" data-house="7th" data-sign="Aries" data-axis="Aries–Libra (7th/1st)">
+  <td class="year">1986</td><td>1986-10-17</td><td><span class="pill lunar">Total Lunar</span></td><td>Aries</td><td>7th</td><td>Aries–Libra (7th/1st)</td>
+</tr>
+
+<tr data-year="1987" data-house="7th" data-sign="Aries" data-axis="Aries–Libra (7th/1st)">
+  <td class="year">1987</td><td>1987-03-29</td><td><span class="pill solar">Hybrid Solar</span></td><td>Aries</td><td>7th</td><td>Aries–Libra (7th/1st)</td>
+</tr>
+
+<tr data-year="1987" data-house="1st" data-sign="Libra" data-axis="Libra–Aries (1st/7th)">
+  <td class="year">1987</td><td>1987-04-14</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Libra</td><td>1st</td><td>Libra–Aries (1st/7th)</td>
+</tr>
+
+<tr data-year="1987" data-house="12th" data-sign="Virgo" data-axis="Virgo–Pisces (12th/6th)">
+  <td class="year">1987</td><td>1987-09-23</td><td><span class="pill solar">Annular Solar</span></td><td>Virgo</td><td>12th</td><td>Virgo–Pisces (12th/6th)</td>
+</tr>
+
+<tr data-year="1987" data-house="7th" data-sign="Aries" data-axis="Aries–Libra (7th/1st)">
+  <td class="year">1987</td><td>1987-10-07</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Aries</td><td>7th</td><td>Aries–Libra (7th/1st)</td>
+</tr>
+
+<tr data-year="1988" data-house="12th" data-sign="Virgo" data-axis="Virgo–Pisces (12th/6th)">
+  <td class="year">1988</td><td>1988-03-03</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Virgo</td><td>12th</td><td>Virgo–Pisces (12th/6th)</td>
+</tr>
+
+<tr data-year="1988" data-house="6th" data-sign="Pisces" data-axis="Pisces–Virgo (6th/12th)">
+  <td class="year">1988</td><td>1988-03-18</td><td><span class="pill solar">Total Solar</span></td><td>Pisces</td><td>6th</td><td>Pisces–Virgo (6th/12th)</td>
+</tr>
+
+<tr data-year="1988" data-house="6th" data-sign="Pisces" data-axis="Pisces–Virgo (6th/12th)">
+  <td class="year">1988</td><td>1988-08-27</td><td><span class="pill lunar">Partial Lunar</span></td><td>Pisces</td><td>6th</td><td>Pisces–Virgo (6th/12th)</td>
+</tr>
+
+<tr data-year="1988" data-house="12th" data-sign="Virgo" data-axis="Virgo–Pisces (12th/6th)">
+  <td class="year">1988</td><td>1988-09-11</td><td><span class="pill solar">Annular Solar</span></td><td>Virgo</td><td>12th</td><td>Virgo–Pisces (12th/6th)</td>
+</tr>
+
+<tr data-year="1989" data-house="12th" data-sign="Virgo" data-axis="Virgo–Pisces (12th/6th)">
+  <td class="year">1989</td><td>1989-02-20</td><td><span class="pill lunar">Total Lunar</span></td><td>Virgo</td><td>12th</td><td>Virgo–Pisces (12th/6th)</td>
+</tr>
+
+<tr data-year="1989" data-house="6th" data-sign="Pisces" data-axis="Pisces–Virgo (6th/12th)">
+  <td class="year">1989</td><td>1989-03-07</td><td><span class="pill solar">Partial Solar</span></td><td>Pisces</td><td>6th</td><td>Pisces–Virgo (6th/12th)</td>
+</tr>
+
+<tr data-year="1989" data-house="5th" data-sign="Aquarius" data-axis="Aquarius–Leo (5th/11th)">
+  <td class="year">1989</td><td>1989-08-17</td><td><span class="pill lunar">Total Lunar</span></td><td>Aquarius</td><td>5th</td><td>Aquarius–Leo (5th/11th)</td>
+</tr>
+
+<tr data-year="1989" data-house="12th" data-sign="Virgo" data-axis="Virgo–Pisces (12th/6th)">
+  <td class="year">1989</td><td>1989-08-31</td><td><span class="pill solar">Partial Solar</span></td><td>Virgo</td><td>12th</td><td>Virgo–Pisces (12th/6th)</td>
+</tr>
+
+<tr data-year="1990" data-house="5th" data-sign="Aquarius" data-axis="Aquarius–Leo (5th/11th)">
+  <td class="year">1990</td><td>1990-01-26</td><td><span class="pill solar">Annular Solar</span></td><td>Aquarius</td><td>5th</td><td>Aquarius–Leo (5th/11th)</td>
+</tr>
+
+<tr data-year="1990" data-house="11th" data-sign="Leo" data-axis="Leo–Aquarius (11th/5th)">
+  <td class="year">1990</td><td>1990-02-09</td><td><span class="pill lunar">Total Lunar</span></td><td>Leo</td><td>11th</td><td>Leo–Aquarius (11th/5th)</td>
+</tr>
+
+<tr data-year="1990" data-house="10th" data-sign="Cancer" data-axis="Cancer–Capricorn (10th/4th)">
+  <td class="year">1990</td><td>1990-07-22</td><td><span class="pill solar">Total Solar</span></td><td>Cancer</td><td>10th</td><td>Cancer–Capricorn (10th/4th)</td>
+</tr>
+
+<tr data-year="1990" data-house="5th" data-sign="Aquarius" data-axis="Aquarius–Leo (5th/11th)">
+  <td class="year">1990</td><td>1990-08-06</td><td><span class="pill lunar">Partial Lunar</span></td><td>Aquarius</td><td>5th</td><td>Aquarius–Leo (5th/11th)</td>
+</tr>
+
+<tr data-year="1991" data-house="4th" data-sign="Capricorn" data-axis="Capricorn–Cancer (4th/10th)">
+  <td class="year">1991</td><td>1991-01-15</td><td><span class="pill solar">Annular Solar</span></td><td>Capricorn</td><td>4th</td><td>Capricorn–Cancer (4th/10th)</td>
+</tr>
+
+<tr data-year="1991" data-house="11th" data-sign="Leo" data-axis="Leo–Aquarius (11th/5th)">
+  <td class="year">1991</td><td>1991-01-30</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Leo</td><td>11th</td><td>Leo–Aquarius (11th/5th)</td>
+</tr>
+
+<tr data-year="1991" data-house="4th" data-sign="Capricorn" data-axis="Capricorn–Cancer (4th/10th)">
+  <td class="year">1991</td><td>1991-06-27</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Capricorn</td><td>4th</td><td>Capricorn–Cancer (4th/10th)</td>
+</tr>
+
+<tr data-year="1991" data-house="10th" data-sign="Cancer" data-axis="Cancer–Capricorn (10th/4th)">
+  <td class="year">1991</td><td>1991-07-11</td><td><span class="pill solar">Total Solar</span></td><td>Cancer</td><td>10th</td><td>Cancer–Capricorn (10th/4th)</td>
+</tr>
+
+<tr data-year="1991" data-house="5th" data-sign="Aquarius" data-axis="Aquarius–Leo (5th/11th)">
+  <td class="year">1991</td><td>1991-07-26</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Aquarius</td><td>5th</td><td>Aquarius–Leo (5th/11th)</td>
+</tr>
+
+<tr data-year="1991" data-house="9th" data-sign="Gemini" data-axis="Gemini–Sagittarius (9th/3rd)">
+  <td class="year">1991</td><td>1991-12-21</td><td><span class="pill lunar">Partial Lunar</span></td><td>Gemini</td><td>9th</td><td>Gemini–Sagittarius (9th/3rd)</td>
+</tr>
+
+<tr data-year="1992" data-house="4th" data-sign="Capricorn" data-axis="Capricorn–Cancer (4th/10th)">
+  <td class="year">1992</td><td>1992-01-04</td><td><span class="pill solar">Annular Solar</span></td><td>Capricorn</td><td>4th</td><td>Capricorn–Cancer (4th/10th)</td>
+</tr>
+
+<tr data-year="1992" data-house="3rd" data-sign="Sagittarius" data-axis="Sagittarius–Gemini (3rd/9th)">
+  <td class="year">1992</td><td>1992-06-15</td><td><span class="pill lunar">Partial Lunar</span></td><td>Sagittarius</td><td>3rd</td><td>Sagittarius–Gemini (3rd/9th)</td>
+</tr>
+
+<tr data-year="1992" data-house="10th" data-sign="Cancer" data-axis="Cancer–Capricorn (10th/4th)">
+  <td class="year">1992</td><td>1992-06-30</td><td><span class="pill solar">Total Solar</span></td><td>Cancer</td><td>10th</td><td>Cancer–Capricorn (10th/4th)</td>
+</tr>
+
+<tr data-year="1992" data-house="9th" data-sign="Gemini" data-axis="Gemini–Sagittarius (9th/3rd)">
+  <td class="year">1992</td><td>1992-12-09</td><td><span class="pill lunar">Total Lunar</span></td><td>Gemini</td><td>9th</td><td>Gemini–Sagittarius (9th/3rd)</td>
+</tr>
+
+<tr data-year="1992" data-house="4th" data-sign="Capricorn" data-axis="Capricorn–Cancer (4th/10th)">
+  <td class="year">1992</td><td>1992-12-24</td><td><span class="pill solar">Partial Solar</span></td><td>Capricorn</td><td>4th</td><td>Capricorn–Cancer (4th/10th)</td>
+</tr>
+
+<tr data-year="1993" data-house="9th" data-sign="Gemini" data-axis="Gemini–Sagittarius (9th/3rd)">
+  <td class="year">1993</td><td>1993-05-21</td><td><span class="pill solar">Partial Solar</span></td><td>Gemini</td><td>9th</td><td>Gemini–Sagittarius (9th/3rd)</td>
+</tr>
+
+<tr data-year="1993" data-house="3rd" data-sign="Sagittarius" data-axis="Sagittarius–Gemini (3rd/9th)">
+  <td class="year">1993</td><td>1993-06-04</td><td><span class="pill lunar">Total Lunar</span></td><td>Sagittarius</td><td>3rd</td><td>Sagittarius–Gemini (3rd/9th)</td>
+</tr>
+
+<tr data-year="1993" data-house="2nd" data-sign="Scorpio" data-axis="Scorpio–Taurus (2nd/8th)">
+  <td class="year">1993</td><td>1993-11-13</td><td><span class="pill solar">Partial Solar</span></td><td>Scorpio</td><td>2nd</td><td>Scorpio–Taurus (2nd/8th)</td>
+</tr>
+
+<tr data-year="1993" data-house="9th" data-sign="Gemini" data-axis="Gemini–Sagittarius (9th/3rd)">
+  <td class="year">1993</td><td>1993-11-29</td><td><span class="pill lunar">Total Lunar</span></td><td>Gemini</td><td>9th</td><td>Gemini–Sagittarius (9th/3rd)</td>
+</tr>
+
+<tr data-year="1994" data-house="8th" data-sign="Taurus" data-axis="Taurus–Scorpio (8th/2nd)">
+  <td class="year">1994</td><td>1994-05-10</td><td><span class="pill solar">Annular Solar</span></td><td>Taurus</td><td>8th</td><td>Taurus–Scorpio (8th/2nd)</td>
+</tr>
+
+<tr data-year="1994" data-house="3rd" data-sign="Sagittarius" data-axis="Sagittarius–Gemini (3rd/9th)">
+  <td class="year">1994</td><td>1994-05-25</td><td><span class="pill lunar">Partial Lunar</span></td><td>Sagittarius</td><td>3rd</td><td>Sagittarius–Gemini (3rd/9th)</td>
+</tr>
+
+<tr data-year="1994" data-house="2nd" data-sign="Scorpio" data-axis="Scorpio–Taurus (2nd/8th)">
+  <td class="year">1994</td><td>1994-11-03</td><td><span class="pill solar">Total Solar</span></td><td>Scorpio</td><td>2nd</td><td>Scorpio–Taurus (2nd/8th)</td>
+</tr>
+
+<tr data-year="1994" data-house="8th" data-sign="Taurus" data-axis="Taurus–Scorpio (8th/2nd)">
+  <td class="year">1994</td><td>1994-11-18</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Taurus</td><td>8th</td><td>Taurus–Scorpio (8th/2nd)</td>
+</tr>
+
+<tr data-year="1995" data-house="1st" data-sign="Libra" data-axis="Libra–Aries (1st/7th)">
+  <td class="year">1995</td><td>1995-04-15</td><td><span class="pill lunar">Partial Lunar</span></td><td>Libra</td><td>1st</td><td>Libra–Aries (1st/7th)</td>
+</tr>
+
+<tr data-year="1995" data-house="8th" data-sign="Taurus" data-axis="Taurus–Scorpio (8th/2nd)">
+  <td class="year">1995</td><td>1995-04-29</td><td><span class="pill solar">Annular Solar</span></td><td>Taurus</td><td>8th</td><td>Taurus–Scorpio (8th/2nd)</td>
+</tr>
+
+<tr data-year="1995" data-house="7th" data-sign="Aries" data-axis="Aries–Libra (7th/1st)">
+  <td class="year">1995</td><td>1995-10-08</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Aries</td><td>7th</td><td>Aries–Libra (7th/1st)</td>
+</tr>
+
+<tr data-year="1995" data-house="2nd" data-sign="Scorpio" data-axis="Scorpio–Taurus (2nd/8th)">
+  <td class="year">1995</td><td>1995-10-24</td><td><span class="pill solar">Total Solar</span></td><td>Scorpio</td><td>2nd</td><td>Scorpio–Taurus (2nd/8th)</td>
+</tr>
+
+<tr data-year="1996" data-house="1st" data-sign="Libra" data-axis="Libra–Aries (1st/7th)">
+  <td class="year">1996</td><td>1996-04-04</td><td><span class="pill lunar">Total Lunar</span></td><td>Libra</td><td>1st</td><td>Libra–Aries (1st/7th)</td>
+</tr>
+
+<tr data-year="1996" data-house="7th" data-sign="Aries" data-axis="Aries–Libra (7th/1st)">
+  <td class="year">1996</td><td>1996-04-17</td><td><span class="pill solar">Partial Solar</span></td><td>Aries</td><td>7th</td><td>Aries–Libra (7th/1st)</td>
+</tr>
+
+<tr data-year="1996" data-house="7th" data-sign="Aries" data-axis="Aries–Libra (7th/1st)">
+  <td class="year">1996</td><td>1996-09-27</td><td><span class="pill lunar">Total Lunar</span></td><td>Aries</td><td>7th</td><td>Aries–Libra (7th/1st)</td>
+</tr>
+
+<tr data-year="1996" data-house="1st" data-sign="Libra" data-axis="Libra–Aries (1st/7th)">
+  <td class="year">1996</td><td>1996-10-12</td><td><span class="pill solar">Partial Solar</span></td><td>Libra</td><td>1st</td><td>Libra–Aries (1st/7th)</td>
+</tr>
+
+<tr data-year="1997" data-house="6th" data-sign="Pisces" data-axis="Pisces–Virgo (6th/12th)">
+  <td class="year">1997</td><td>1997-03-09</td><td><span class="pill solar">Total Solar</span></td><td>Pisces</td><td>6th</td><td>Pisces–Virgo (6th/12th)</td>
+</tr>
+
+<tr data-year="1997" data-house="1st" data-sign="Libra" data-axis="Libra–Aries (1st/7th)">
+  <td class="year">1997</td><td>1997-03-24</td><td><span class="pill lunar">Partial Lunar</span></td><td>Libra</td><td>1st</td><td>Libra–Aries (1st/7th)</td>
+</tr>
+
+<tr data-year="1997" data-house="12th" data-sign="Virgo" data-axis="Virgo–Pisces (12th/6th)">
+  <td class="year">1997</td><td>1997-09-02</td><td><span class="pill solar">Partial Solar</span></td><td>Virgo</td><td>12th</td><td>Virgo–Pisces (12th/6th)</td>
+</tr>
+
+<tr data-year="1997" data-house="6th" data-sign="Pisces" data-axis="Pisces–Virgo (6th/12th)">
+  <td class="year">1997</td><td>1997-09-16</td><td><span class="pill lunar">Total Lunar</span></td><td>Pisces</td><td>6th</td><td>Pisces–Virgo (6th/12th)</td>
+</tr>
+
+<tr data-year="1998" data-house="6th" data-sign="Pisces" data-axis="Pisces–Virgo (6th/12th)">
+  <td class="year">1998</td><td>1998-02-26</td><td><span class="pill solar">Total Solar</span></td><td>Pisces</td><td>6th</td><td>Pisces–Virgo (6th/12th)</td>
+</tr>
+
+<tr data-year="1998" data-house="12th" data-sign="Virgo" data-axis="Virgo–Pisces (12th/6th)">
+  <td class="year">1998</td><td>1998-03-13</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Virgo</td><td>12th</td><td>Virgo–Pisces (12th/6th)</td>
+</tr>
+
+<tr data-year="1998" data-house="5th" data-sign="Aquarius" data-axis="Aquarius–Leo (5th/11th)">
+  <td class="year">1998</td><td>1998-08-08</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Aquarius</td><td>5th</td><td>Aquarius–Leo (5th/11th)</td>
+</tr>
+
+<tr data-year="1998" data-house="11th" data-sign="Leo" data-axis="Leo–Aquarius (11th/5th)">
+  <td class="year">1998</td><td>1998-08-22</td><td><span class="pill solar">Annular Solar</span></td><td>Leo</td><td>11th</td><td>Leo–Aquarius (11th/5th)</td>
+</tr>
+
+<tr data-year="1998" data-house="6th" data-sign="Pisces" data-axis="Pisces–Virgo (6th/12th)">
+  <td class="year">1998</td><td>1998-09-06</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Pisces</td><td>6th</td><td>Pisces–Virgo (6th/12th)</td>
+</tr>
+
+<tr data-year="1999" data-house="11th" data-sign="Leo" data-axis="Leo–Aquarius (11th/5th)">
+  <td class="year">1999</td><td>1999-01-31</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Leo</td><td>11th</td><td>Leo–Aquarius (11th/5th)</td>
+</tr>
+
+<tr data-year="1999" data-house="5th" data-sign="Aquarius" data-axis="Aquarius–Leo (5th/11th)">
+  <td class="year">1999</td><td>1999-02-16</td><td><span class="pill solar">Annular Solar</span></td><td>Aquarius</td><td>5th</td><td>Aquarius–Leo (5th/11th)</td>
+</tr>
+
+<tr data-year="1999" data-house="5th" data-sign="Aquarius" data-axis="Aquarius–Leo (5th/11th)">
+  <td class="year">1999</td><td>1999-07-28</td><td><span class="pill lunar">Partial Lunar</span></td><td>Aquarius</td><td>5th</td><td>Aquarius–Leo (5th/11th)</td>
+</tr>
+
+<tr data-year="1999" data-house="11th" data-sign="Leo" data-axis="Leo–Aquarius (11th/5th)">
+  <td class="year">1999</td><td>1999-08-11</td><td><span class="pill solar">Total Solar</span></td><td>Leo</td><td>11th</td><td>Leo–Aquarius (11th/5th)</td>
+</tr>
+
+<tr data-year="2000" data-house="11th" data-sign="Leo" data-axis="Leo–Aquarius (11th/5th)">
+  <td class="year">2000</td><td>2000-01-21</td><td><span class="pill lunar">Total Lunar</span></td><td>Leo</td><td>11th</td><td>Leo–Aquarius (11th/5th)</td>
+</tr>
+
+<tr data-year="2000" data-house="5th" data-sign="Aquarius" data-axis="Aquarius–Leo (5th/11th)">
+  <td class="year">2000</td><td>2000-02-05</td><td><span class="pill solar">Partial Solar</span></td><td>Aquarius</td><td>5th</td><td>Aquarius–Leo (5th/11th)</td>
+</tr>
+
+<tr data-year="2000" data-house="10th" data-sign="Cancer" data-axis="Cancer–Capricorn (10th/4th)">
+  <td class="year">2000</td><td>2000-07-01</td><td><span class="pill solar">Partial Solar</span></td><td>Cancer</td><td>10th</td><td>Cancer–Capricorn (10th/4th)</td>
+</tr>
+
+<tr data-year="2000" data-house="4th" data-sign="Capricorn" data-axis="Capricorn–Cancer (4th/10th)">
+  <td class="year">2000</td><td>2000-07-16</td><td><span class="pill lunar">Total Lunar</span></td><td>Capricorn</td><td>4th</td><td>Capricorn–Cancer (4th/10th)</td>
+</tr>
+
+<tr data-year="2000" data-house="11th" data-sign="Leo" data-axis="Leo–Aquarius (11th/5th)">
+  <td class="year">2000</td><td>2000-07-31</td><td><span class="pill solar">Partial Solar</span></td><td>Leo</td><td>11th</td><td>Leo–Aquarius (11th/5th)</td>
+</tr>
+
+<tr data-year="2000" data-house="4th" data-sign="Capricorn" data-axis="Capricorn–Cancer (4th/10th)">
+  <td class="year">2000</td><td>2000-12-25</td><td><span class="pill solar">Partial Solar</span></td><td>Capricorn</td><td>4th</td><td>Capricorn–Cancer (4th/10th)</td>
+</tr>
+
+<tr data-year="2001" data-house="10th" data-sign="Cancer" data-axis="Cancer–Capricorn (10th/4th)">
+  <td class="year">2001</td><td>2001-01-09</td><td><span class="pill lunar">Total Lunar</span></td><td>Cancer</td><td>10th</td><td>Cancer–Capricorn (10th/4th)</td>
+</tr>
+
+<tr data-year="2001" data-house="10th" data-sign="Cancer" data-axis="Cancer–Capricorn (10th/4th)">
+  <td class="year">2001</td><td>2001-06-21</td><td><span class="pill solar">Total Solar</span></td><td>Cancer</td><td>10th</td><td>Cancer–Capricorn (10th/4th)</td>
+</tr>
+
+<tr data-year="2001" data-house="4th" data-sign="Capricorn" data-axis="Capricorn–Cancer (4th/10th)">
+  <td class="year">2001</td><td>2001-07-05</td><td><span class="pill lunar">Partial Lunar</span></td><td>Capricorn</td><td>4th</td><td>Capricorn–Cancer (4th/10th)</td>
+</tr>
+
+<tr data-year="2001" data-house="3rd" data-sign="Sagittarius" data-axis="Sagittarius–Gemini (3rd/9th)">
+  <td class="year">2001</td><td>2001-12-14</td><td><span class="pill solar">Annular Solar</span></td><td>Sagittarius</td><td>3rd</td><td>Sagittarius–Gemini (3rd/9th)</td>
+</tr>
+
+<tr data-year="2001" data-house="10th" data-sign="Cancer" data-axis="Cancer–Capricorn (10th/4th)">
+  <td class="year">2001</td><td>2001-12-30</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Cancer</td><td>10th</td><td>Cancer–Capricorn (10th/4th)</td>
+</tr>
+
+<tr data-year="2002" data-house="3rd" data-sign="Sagittarius" data-axis="Sagittarius–Gemini (3rd/9th)">
+  <td class="year">2002</td><td>2002-05-26</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Sagittarius</td><td>3rd</td><td>Sagittarius–Gemini (3rd/9th)</td>
+</tr>
+
+<tr data-year="2002" data-house="9th" data-sign="Gemini" data-axis="Gemini–Sagittarius (9th/3rd)">
+  <td class="year">2002</td><td>2002-06-10</td><td><span class="pill solar">Annular Solar</span></td><td>Gemini</td><td>9th</td><td>Gemini–Sagittarius (9th/3rd)</td>
+</tr>
+
+<tr data-year="2002" data-house="4th" data-sign="Capricorn" data-axis="Capricorn–Cancer (4th/10th)">
+  <td class="year">2002</td><td>2002-06-24</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Capricorn</td><td>4th</td><td>Capricorn–Cancer (4th/10th)</td>
+</tr>
+
+<tr data-year="2002" data-house="8th" data-sign="Taurus" data-axis="Taurus–Scorpio (8th/2nd)">
+  <td class="year">2002</td><td>2002-11-20</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Taurus</td><td>8th</td><td>Taurus–Scorpio (8th/2nd)</td>
+</tr>
+
+<tr data-year="2002" data-house="3rd" data-sign="Sagittarius" data-axis="Sagittarius–Gemini (3rd/9th)">
+  <td class="year">2002</td><td>2002-12-04</td><td><span class="pill solar">Total Solar</span></td><td>Sagittarius</td><td>3rd</td><td>Sagittarius–Gemini (3rd/9th)</td>
+</tr>
+
+<tr data-year="2003" data-house="2nd" data-sign="Scorpio" data-axis="Scorpio–Taurus (2nd/8th)">
+  <td class="year">2003</td><td>2003-05-16</td><td><span class="pill lunar">Total Lunar</span></td><td>Scorpio</td><td>2nd</td><td>Scorpio–Taurus (2nd/8th)</td>
+</tr>
+
+<tr data-year="2003" data-house="9th" data-sign="Gemini" data-axis="Gemini–Sagittarius (9th/3rd)">
+  <td class="year">2003</td><td>2003-05-31</td><td><span class="pill solar">Annular Solar</span></td><td>Gemini</td><td>9th</td><td>Gemini–Sagittarius (9th/3rd)</td>
+</tr>
+
+<tr data-year="2003" data-house="8th" data-sign="Taurus" data-axis="Taurus–Scorpio (8th/2nd)">
+  <td class="year">2003</td><td>2003-11-09</td><td><span class="pill lunar">Total Lunar</span></td><td>Taurus</td><td>8th</td><td>Taurus–Scorpio (8th/2nd)</td>
+</tr>
+
+<tr data-year="2003" data-house="3rd" data-sign="Sagittarius" data-axis="Sagittarius–Gemini (3rd/9th)">
+  <td class="year">2003</td><td>2003-11-23</td><td><span class="pill solar">Total Solar</span></td><td>Sagittarius</td><td>3rd</td><td>Sagittarius–Gemini (3rd/9th)</td>
+</tr>
+
+<tr data-year="2004" data-house="7th" data-sign="Aries" data-axis="Aries–Libra (7th/1st)">
+  <td class="year">2004</td><td>2004-04-19</td><td><span class="pill solar">Partial Solar</span></td><td>Aries</td><td>7th</td><td>Aries–Libra (7th/1st)</td>
+</tr>
+
+<tr data-year="2004" data-house="2nd" data-sign="Scorpio" data-axis="Scorpio–Taurus (2nd/8th)">
+  <td class="year">2004</td><td>2004-05-04</td><td><span class="pill lunar">Total Lunar</span></td><td>Scorpio</td><td>2nd</td><td>Scorpio–Taurus (2nd/8th)</td>
+</tr>
+
+<tr data-year="2004" data-house="1st" data-sign="Libra" data-axis="Libra–Aries (1st/7th)">
+  <td class="year">2004</td><td>2004-10-14</td><td><span class="pill solar">Partial Solar</span></td><td>Libra</td><td>1st</td><td>Libra–Aries (1st/7th)</td>
+</tr>
+
+<tr data-year="2004" data-house="8th" data-sign="Taurus" data-axis="Taurus–Scorpio (8th/2nd)">
+  <td class="year">2004</td><td>2004-10-28</td><td><span class="pill lunar">Total Lunar</span></td><td>Taurus</td><td>8th</td><td>Taurus–Scorpio (8th/2nd)</td>
+</tr>
+
+<tr data-year="2005" data-house="7th" data-sign="Aries" data-axis="Aries–Libra (7th/1st)">
+  <td class="year">2005</td><td>2005-04-08</td><td><span class="pill solar">Hybrid Solar</span></td><td>Aries</td><td>7th</td><td>Aries–Libra (7th/1st)</td>
+</tr>
+
+<tr data-year="2005" data-house="2nd" data-sign="Scorpio" data-axis="Scorpio–Taurus (2nd/8th)">
+  <td class="year">2005</td><td>2005-04-24</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Scorpio</td><td>2nd</td><td>Scorpio–Taurus (2nd/8th)</td>
+</tr>
+
+<tr data-year="2005" data-house="1st" data-sign="Libra" data-axis="Libra–Aries (1st/7th)">
+  <td class="year">2005</td><td>2005-10-03</td><td><span class="pill solar">Annular Solar</span></td><td>Libra</td><td>1st</td><td>Libra–Aries (1st/7th)</td>
+</tr>
+
+<tr data-year="2005" data-house="7th" data-sign="Aries" data-axis="Aries–Libra (7th/1st)">
+  <td class="year">2005</td><td>2005-10-17</td><td><span class="pill lunar">Partial Lunar</span></td><td>Aries</td><td>7th</td><td>Aries–Libra (7th/1st)</td>
+</tr>
+
+<tr data-year="2006" data-house="12th" data-sign="Virgo" data-axis="Virgo–Pisces (12th/6th)">
+  <td class="year">2006</td><td>2006-03-14</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Virgo</td><td>12th</td><td>Virgo–Pisces (12th/6th)</td>
+</tr>
+
+<tr data-year="2006" data-house="7th" data-sign="Aries" data-axis="Aries–Libra (7th/1st)">
+  <td class="year">2006</td><td>2006-03-29</td><td><span class="pill solar">Total Solar</span></td><td>Aries</td><td>7th</td><td>Aries–Libra (7th/1st)</td>
+</tr>
+
+<tr data-year="2006" data-house="6th" data-sign="Pisces" data-axis="Pisces–Virgo (6th/12th)">
+  <td class="year">2006</td><td>2006-09-07</td><td><span class="pill lunar">Partial Lunar</span></td><td>Pisces</td><td>6th</td><td>Pisces–Virgo (6th/12th)</td>
+</tr>
+
+<tr data-year="2006" data-house="12th" data-sign="Virgo" data-axis="Virgo–Pisces (12th/6th)">
+  <td class="year">2006</td><td>2006-09-22</td><td><span class="pill solar">Annular Solar</span></td><td>Virgo</td><td>12th</td><td>Virgo–Pisces (12th/6th)</td>
+</tr>
+
+<tr data-year="2007" data-house="12th" data-sign="Virgo" data-axis="Virgo–Pisces (12th/6th)">
+  <td class="year">2007</td><td>2007-03-03</td><td><span class="pill lunar">Total Lunar</span></td><td>Virgo</td><td>12th</td><td>Virgo–Pisces (12th/6th)</td>
+</tr>
+
+<tr data-year="2007" data-house="6th" data-sign="Pisces" data-axis="Pisces–Virgo (6th/12th)">
+  <td class="year">2007</td><td>2007-03-19</td><td><span class="pill solar">Partial Solar</span></td><td>Pisces</td><td>6th</td><td>Pisces–Virgo (6th/12th)</td>
+</tr>
+
+<tr data-year="2007" data-house="6th" data-sign="Pisces" data-axis="Pisces–Virgo (6th/12th)">
+  <td class="year">2007</td><td>2007-08-28</td><td><span class="pill lunar">Total Lunar</span></td><td>Pisces</td><td>6th</td><td>Pisces–Virgo (6th/12th)</td>
+</tr>
+
+<tr data-year="2007" data-house="12th" data-sign="Virgo" data-axis="Virgo–Pisces (12th/6th)">
+  <td class="year">2007</td><td>2007-09-11</td><td><span class="pill solar">Partial Solar</span></td><td>Virgo</td><td>12th</td><td>Virgo–Pisces (12th/6th)</td>
+</tr>
+
+<tr data-year="2008" data-house="5th" data-sign="Aquarius" data-axis="Aquarius–Leo (5th/11th)">
+  <td class="year">2008</td><td>2008-02-07</td><td><span class="pill solar">Annular Solar</span></td><td>Aquarius</td><td>5th</td><td>Aquarius–Leo (5th/11th)</td>
+</tr>
+
+<tr data-year="2008" data-house="12th" data-sign="Virgo" data-axis="Virgo–Pisces (12th/6th)">
+  <td class="year">2008</td><td>2008-02-21</td><td><span class="pill lunar">Total Lunar</span></td><td>Virgo</td><td>12th</td><td>Virgo–Pisces (12th/6th)</td>
+</tr>
+
+<tr data-year="2008" data-house="11th" data-sign="Leo" data-axis="Leo–Aquarius (11th/5th)">
+  <td class="year">2008</td><td>2008-08-01</td><td><span class="pill solar">Total Solar</span></td><td>Leo</td><td>11th</td><td>Leo–Aquarius (11th/5th)</td>
+</tr>
+
+<tr data-year="2008" data-house="5th" data-sign="Aquarius" data-axis="Aquarius–Leo (5th/11th)">
+  <td class="year">2008</td><td>2008-08-16</td><td><span class="pill lunar">Partial Lunar</span></td><td>Aquarius</td><td>5th</td><td>Aquarius–Leo (5th/11th)</td>
+</tr>
+
+<tr data-year="2009" data-house="5th" data-sign="Aquarius" data-axis="Aquarius–Leo (5th/11th)">
+  <td class="year">2009</td><td>2009-01-26</td><td><span class="pill solar">Annular Solar</span></td><td>Aquarius</td><td>5th</td><td>Aquarius–Leo (5th/11th)</td>
+</tr>
+
+<tr data-year="2009" data-house="11th" data-sign="Leo" data-axis="Leo–Aquarius (11th/5th)">
+  <td class="year">2009</td><td>2009-02-09</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Leo</td><td>11th</td><td>Leo–Aquarius (11th/5th)</td>
+</tr>
+
+<tr data-year="2009" data-house="4th" data-sign="Capricorn" data-axis="Capricorn–Cancer (4th/10th)">
+  <td class="year">2009</td><td>2009-07-07</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Capricorn</td><td>4th</td><td>Capricorn–Cancer (4th/10th)</td>
+</tr>
+
+<tr data-year="2009" data-house="10th" data-sign="Cancer" data-axis="Cancer–Capricorn (10th/4th)">
+  <td class="year">2009</td><td>2009-07-22</td><td><span class="pill solar">Total Solar</span></td><td>Cancer</td><td>10th</td><td>Cancer–Capricorn (10th/4th)</td>
+</tr>
+
+<tr data-year="2009" data-house="5th" data-sign="Aquarius" data-axis="Aquarius–Leo (5th/11th)">
+  <td class="year">2009</td><td>2009-08-06</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Aquarius</td><td>5th</td><td>Aquarius–Leo (5th/11th)</td>
+</tr>
+
+<tr data-year="2009" data-house="10th" data-sign="Cancer" data-axis="Cancer–Capricorn (10th/4th)">
+  <td class="year">2009</td><td>2009-12-31</td><td><span class="pill lunar">Partial Lunar</span></td><td>Cancer</td><td>10th</td><td>Cancer–Capricorn (10th/4th)</td>
+</tr>
+
+<tr data-year="2010" data-house="4th" data-sign="Capricorn" data-axis="Capricorn–Cancer (4th/10th)">
+  <td class="year">2010</td><td>2010-01-15</td><td><span class="pill solar">Annular Solar</span></td><td>Capricorn</td><td>4th</td><td>Capricorn–Cancer (4th/10th)</td>
+</tr>
+
+<tr data-year="2010" data-house="4th" data-sign="Capricorn" data-axis="Capricorn–Cancer (4th/10th)">
+  <td class="year">2010</td><td>2010-06-26</td><td><span class="pill lunar">Partial Lunar</span></td><td>Capricorn</td><td>4th</td><td>Capricorn–Cancer (4th/10th)</td>
+</tr>
+
+<tr data-year="2010" data-house="10th" data-sign="Cancer" data-axis="Cancer–Capricorn (10th/4th)">
+  <td class="year">2010</td><td>2010-07-11</td><td><span class="pill solar">Total Solar</span></td><td>Cancer</td><td>10th</td><td>Cancer–Capricorn (10th/4th)</td>
+</tr>
+
+<tr data-year="2010" data-house="9th" data-sign="Gemini" data-axis="Gemini–Sagittarius (9th/3rd)">
+  <td class="year">2010</td><td>2010-12-21</td><td><span class="pill lunar">Total Lunar</span></td><td>Gemini</td><td>9th</td><td>Gemini–Sagittarius (9th/3rd)</td>
+</tr>
+
+<tr data-year="2011" data-house="4th" data-sign="Capricorn" data-axis="Capricorn–Cancer (4th/10th)">
+  <td class="year">2011</td><td>2011-01-04</td><td><span class="pill solar">Partial Solar</span></td><td>Capricorn</td><td>4th</td><td>Capricorn–Cancer (4th/10th)</td>
+</tr>
+
+<tr data-year="2011" data-house="9th" data-sign="Gemini" data-axis="Gemini–Sagittarius (9th/3rd)">
+  <td class="year">2011</td><td>2011-06-01</td><td><span class="pill solar">Partial Solar</span></td><td>Gemini</td><td>9th</td><td>Gemini–Sagittarius (9th/3rd)</td>
+</tr>
+
+<tr data-year="2011" data-house="3rd" data-sign="Sagittarius" data-axis="Sagittarius–Gemini (3rd/9th)">
+  <td class="year">2011</td><td>2011-06-15</td><td><span class="pill lunar">Total Lunar</span></td><td>Sagittarius</td><td>3rd</td><td>Sagittarius–Gemini (3rd/9th)</td>
+</tr>
+
+<tr data-year="2011" data-house="10th" data-sign="Cancer" data-axis="Cancer–Capricorn (10th/4th)">
+  <td class="year">2011</td><td>2011-07-01</td><td><span class="pill solar">Partial Solar</span></td><td>Cancer</td><td>10th</td><td>Cancer–Capricorn (10th/4th)</td>
+</tr>
+
+<tr data-year="2011" data-house="3rd" data-sign="Sagittarius" data-axis="Sagittarius–Gemini (3rd/9th)">
+  <td class="year">2011</td><td>2011-11-25</td><td><span class="pill solar">Partial Solar</span></td><td>Sagittarius</td><td>3rd</td><td>Sagittarius–Gemini (3rd/9th)</td>
+</tr>
+
+<tr data-year="2011" data-house="9th" data-sign="Gemini" data-axis="Gemini–Sagittarius (9th/3rd)">
+  <td class="year">2011</td><td>2011-12-10</td><td><span class="pill lunar">Total Lunar</span></td><td>Gemini</td><td>9th</td><td>Gemini–Sagittarius (9th/3rd)</td>
+</tr>
+
+<tr data-year="2012" data-house="9th" data-sign="Gemini" data-axis="Gemini–Sagittarius (9th/3rd)">
+  <td class="year">2012</td><td>2012-05-20</td><td><span class="pill solar">Annular Solar</span></td><td>Gemini</td><td>9th</td><td>Gemini–Sagittarius (9th/3rd)</td>
+</tr>
+
+<tr data-year="2012" data-house="3rd" data-sign="Sagittarius" data-axis="Sagittarius–Gemini (3rd/9th)">
+  <td class="year">2012</td><td>2012-06-04</td><td><span class="pill lunar">Partial Lunar</span></td><td>Sagittarius</td><td>3rd</td><td>Sagittarius–Gemini (3rd/9th)</td>
+</tr>
+
+<tr data-year="2012" data-house="2nd" data-sign="Scorpio" data-axis="Scorpio–Taurus (2nd/8th)">
+  <td class="year">2012</td><td>2012-11-13</td><td><span class="pill solar">Total Solar</span></td><td>Scorpio</td><td>2nd</td><td>Scorpio–Taurus (2nd/8th)</td>
+</tr>
+
+<tr data-year="2012" data-house="9th" data-sign="Gemini" data-axis="Gemini–Sagittarius (9th/3rd)">
+  <td class="year">2012</td><td>2012-11-28</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Gemini</td><td>9th</td><td>Gemini–Sagittarius (9th/3rd)</td>
+</tr>
+
+<tr data-year="2013" data-house="2nd" data-sign="Scorpio" data-axis="Scorpio–Taurus (2nd/8th)">
+  <td class="year">2013</td><td>2013-04-25</td><td><span class="pill lunar">Partial Lunar</span></td><td>Scorpio</td><td>2nd</td><td>Scorpio–Taurus (2nd/8th)</td>
+</tr>
+
+<tr data-year="2013" data-house="8th" data-sign="Taurus" data-axis="Taurus–Scorpio (8th/2nd)">
+  <td class="year">2013</td><td>2013-05-10</td><td><span class="pill solar">Annular Solar</span></td><td>Taurus</td><td>8th</td><td>Taurus–Scorpio (8th/2nd)</td>
+</tr>
+
+<tr data-year="2013" data-house="3rd" data-sign="Sagittarius" data-axis="Sagittarius–Gemini (3rd/9th)">
+  <td class="year">2013</td><td>2013-05-25</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Sagittarius</td><td>3rd</td><td>Sagittarius–Gemini (3rd/9th)</td>
+</tr>
+
+<tr data-year="2013" data-house="7th" data-sign="Aries" data-axis="Aries–Libra (7th/1st)">
+  <td class="year">2013</td><td>2013-10-18</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Aries</td><td>7th</td><td>Aries–Libra (7th/1st)</td>
+</tr>
+
+<tr data-year="2013" data-house="2nd" data-sign="Scorpio" data-axis="Scorpio–Taurus (2nd/8th)">
+  <td class="year">2013</td><td>2013-11-03</td><td><span class="pill solar">Hybrid Solar</span></td><td>Scorpio</td><td>2nd</td><td>Scorpio–Taurus (2nd/8th)</td>
+</tr>
+
+<tr data-year="2014" data-house="1st" data-sign="Libra" data-axis="Libra–Aries (1st/7th)">
+  <td class="year">2014</td><td>2014-04-15</td><td><span class="pill lunar">Total Lunar</span></td><td>Libra</td><td>1st</td><td>Libra–Aries (1st/7th)</td>
+</tr>
+
+<tr data-year="2014" data-house="8th" data-sign="Taurus" data-axis="Taurus–Scorpio (8th/2nd)">
+  <td class="year">2014</td><td>2014-04-29</td><td><span class="pill solar">Annular Solar</span></td><td>Taurus</td><td>8th</td><td>Taurus–Scorpio (8th/2nd)</td>
+</tr>
+
+<tr data-year="2014" data-house="7th" data-sign="Aries" data-axis="Aries–Libra (7th/1st)">
+  <td class="year">2014</td><td>2014-10-08</td><td><span class="pill lunar">Total Lunar</span></td><td>Aries</td><td>7th</td><td>Aries–Libra (7th/1st)</td>
+</tr>
+
+<tr data-year="2014" data-house="2nd" data-sign="Scorpio" data-axis="Scorpio–Taurus (2nd/8th)">
+  <td class="year">2014</td><td>2014-10-23</td><td><span class="pill solar">Partial Solar</span></td><td>Scorpio</td><td>2nd</td><td>Scorpio–Taurus (2nd/8th)</td>
+</tr>
+
+<tr data-year="2015" data-house="6th" data-sign="Pisces" data-axis="Pisces–Virgo (6th/12th)">
+  <td class="year">2015</td><td>2015-03-20</td><td><span class="pill solar">Total Solar</span></td><td>Pisces</td><td>6th</td><td>Pisces–Virgo (6th/12th)</td>
+</tr>
+
+<tr data-year="2015" data-house="1st" data-sign="Libra" data-axis="Libra–Aries (1st/7th)">
+  <td class="year">2015</td><td>2015-04-04</td><td><span class="pill lunar">Total Lunar</span></td><td>Libra</td><td>1st</td><td>Libra–Aries (1st/7th)</td>
+</tr>
+
+<tr data-year="2015" data-house="12th" data-sign="Virgo" data-axis="Virgo–Pisces (12th/6th)">
+  <td class="year">2015</td><td>2015-09-13</td><td><span class="pill solar">Partial Solar</span></td><td>Virgo</td><td>12th</td><td>Virgo–Pisces (12th/6th)</td>
+</tr>
+
+<tr data-year="2015" data-house="7th" data-sign="Aries" data-axis="Aries–Libra (7th/1st)">
+  <td class="year">2015</td><td>2015-09-28</td><td><span class="pill lunar">Total Lunar</span></td><td>Aries</td><td>7th</td><td>Aries–Libra (7th/1st)</td>
+</tr>
+
+<tr data-year="2016" data-house="6th" data-sign="Pisces" data-axis="Pisces–Virgo (6th/12th)">
+  <td class="year">2016</td><td>2016-03-09</td><td><span class="pill solar">Total Solar</span></td><td>Pisces</td><td>6th</td><td>Pisces–Virgo (6th/12th)</td>
+</tr>
+
+<tr data-year="2016" data-house="1st" data-sign="Libra" data-axis="Libra–Aries (1st/7th)">
+  <td class="year">2016</td><td>2016-03-23</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Libra</td><td>1st</td><td>Libra–Aries (1st/7th)</td>
+</tr>
+
+<tr data-year="2016" data-house="12th" data-sign="Virgo" data-axis="Virgo–Pisces (12th/6th)">
+  <td class="year">2016</td><td>2016-09-01</td><td><span class="pill solar">Annular Solar</span></td><td>Virgo</td><td>12th</td><td>Virgo–Pisces (12th/6th)</td>
+</tr>
+
+<tr data-year="2016" data-house="6th" data-sign="Pisces" data-axis="Pisces–Virgo (6th/12th)">
+  <td class="year">2016</td><td>2016-09-16</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Pisces</td><td>6th</td><td>Pisces–Virgo (6th/12th)</td>
+</tr>
+
+<tr data-year="2017" data-house="11th" data-sign="Leo" data-axis="Leo–Aquarius (11th/5th)">
+  <td class="year">2017</td><td>2017-02-11</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Leo</td><td>11th</td><td>Leo–Aquarius (11th/5th)</td>
+</tr>
+
+<tr data-year="2017" data-house="6th" data-sign="Pisces" data-axis="Pisces–Virgo (6th/12th)">
+  <td class="year">2017</td><td>2017-02-26</td><td><span class="pill solar">Annular Solar</span></td><td>Pisces</td><td>6th</td><td>Pisces–Virgo (6th/12th)</td>
+</tr>
+
+<tr data-year="2017" data-house="5th" data-sign="Aquarius" data-axis="Aquarius–Leo (5th/11th)">
+  <td class="year">2017</td><td>2017-08-07</td><td><span class="pill lunar">Partial Lunar</span></td><td>Aquarius</td><td>5th</td><td>Aquarius–Leo (5th/11th)</td>
+</tr>
+
+<tr data-year="2017" data-house="11th" data-sign="Leo" data-axis="Leo–Aquarius (11th/5th)">
+  <td class="year">2017</td><td>2017-08-21</td><td><span class="pill solar">Total Solar</span></td><td>Leo</td><td>11th</td><td>Leo–Aquarius (11th/5th)</td>
+</tr>
+
+<tr data-year="2018" data-house="11th" data-sign="Leo" data-axis="Leo–Aquarius (11th/5th)">
+  <td class="year">2018</td><td>2018-01-31</td><td><span class="pill lunar">Total Lunar</span></td><td>Leo</td><td>11th</td><td>Leo–Aquarius (11th/5th)</td>
+</tr>
+
+<tr data-year="2018" data-house="5th" data-sign="Aquarius" data-axis="Aquarius–Leo (5th/11th)">
+  <td class="year">2018</td><td>2018-02-15</td><td><span class="pill solar">Partial Solar</span></td><td>Aquarius</td><td>5th</td><td>Aquarius–Leo (5th/11th)</td>
+</tr>
+
+<tr data-year="2018" data-house="10th" data-sign="Cancer" data-axis="Cancer–Capricorn (10th/4th)">
+  <td class="year">2018</td><td>2018-07-13</td><td><span class="pill solar">Partial Solar</span></td><td>Cancer</td><td>10th</td><td>Cancer–Capricorn (10th/4th)</td>
+</tr>
+
+<tr data-year="2018" data-house="5th" data-sign="Aquarius" data-axis="Aquarius–Leo (5th/11th)">
+  <td class="year">2018</td><td>2018-07-27</td><td><span class="pill lunar">Total Lunar</span></td><td>Aquarius</td><td>5th</td><td>Aquarius–Leo (5th/11th)</td>
+</tr>
+
+<tr data-year="2018" data-house="11th" data-sign="Leo" data-axis="Leo–Aquarius (11th/5th)">
+  <td class="year">2018</td><td>2018-08-11</td><td><span class="pill solar">Partial Solar</span></td><td>Leo</td><td>11th</td><td>Leo–Aquarius (11th/5th)</td>
+</tr>
+
+<tr data-year="2019" data-house="4th" data-sign="Capricorn" data-axis="Capricorn–Cancer (4th/10th)">
+  <td class="year">2019</td><td>2019-01-06</td><td><span class="pill solar">Partial Solar</span></td><td>Capricorn</td><td>4th</td><td>Capricorn–Cancer (4th/10th)</td>
+</tr>
+
+<tr data-year="2019" data-house="11th" data-sign="Leo" data-axis="Leo–Aquarius (11th/5th)">
+  <td class="year">2019</td><td>2019-01-21</td><td><span class="pill lunar">Total Lunar</span></td><td>Leo</td><td>11th</td><td>Leo–Aquarius (11th/5th)</td>
+</tr>
+
+<tr data-year="2019" data-house="10th" data-sign="Cancer" data-axis="Cancer–Capricorn (10th/4th)">
+  <td class="year">2019</td><td>2019-07-02</td><td><span class="pill solar">Total Solar</span></td><td>Cancer</td><td>10th</td><td>Cancer–Capricorn (10th/4th)</td>
+</tr>
+
+<tr data-year="2019" data-house="4th" data-sign="Capricorn" data-axis="Capricorn–Cancer (4th/10th)">
+  <td class="year">2019</td><td>2019-07-16</td><td><span class="pill lunar">Partial Lunar</span></td><td>Capricorn</td><td>4th</td><td>Capricorn–Cancer (4th/10th)</td>
+</tr>
+
+<tr data-year="2019" data-house="4th" data-sign="Capricorn" data-axis="Capricorn–Cancer (4th/10th)">
+  <td class="year">2019</td><td>2019-12-26</td><td><span class="pill solar">Annular Solar</span></td><td>Capricorn</td><td>4th</td><td>Capricorn–Cancer (4th/10th)</td>
+</tr>
+
+<tr data-year="2020" data-house="10th" data-sign="Cancer" data-axis="Cancer–Capricorn (10th/4th)">
+  <td class="year">2020</td><td>2020-01-10</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Cancer</td><td>10th</td><td>Cancer–Capricorn (10th/4th)</td>
+</tr>
+
+<tr data-year="2020" data-house="3rd" data-sign="Sagittarius" data-axis="Sagittarius–Gemini (3rd/9th)">
+  <td class="year">2020</td><td>2020-06-05</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Sagittarius</td><td>3rd</td><td>Sagittarius–Gemini (3rd/9th)</td>
+</tr>
+
+<tr data-year="2020" data-house="10th" data-sign="Cancer" data-axis="Cancer–Capricorn (10th/4th)">
+  <td class="year">2020</td><td>2020-06-21</td><td><span class="pill solar">Annular Solar</span></td><td>Cancer</td><td>10th</td><td>Cancer–Capricorn (10th/4th)</td>
+</tr>
+
+<tr data-year="2020" data-house="4th" data-sign="Capricorn" data-axis="Capricorn–Cancer (4th/10th)">
+  <td class="year">2020</td><td>2020-07-05</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Capricorn</td><td>4th</td><td>Capricorn–Cancer (4th/10th)</td>
+</tr>
+
+<tr data-year="2020" data-house="9th" data-sign="Gemini" data-axis="Gemini–Sagittarius (9th/3rd)">
+  <td class="year">2020</td><td>2020-11-30</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Gemini</td><td>9th</td><td>Gemini–Sagittarius (9th/3rd)</td>
+</tr>
+
+<tr data-year="2020" data-house="3rd" data-sign="Sagittarius" data-axis="Sagittarius–Gemini (3rd/9th)">
+  <td class="year">2020</td><td>2020-12-14</td><td><span class="pill solar">Total Solar</span></td><td>Sagittarius</td><td>3rd</td><td>Sagittarius–Gemini (3rd/9th)</td>
+</tr>
+
+<tr data-year="2021" data-house="3rd" data-sign="Sagittarius" data-axis="Sagittarius–Gemini (3rd/9th)">
+  <td class="year">2021</td><td>2021-05-26</td><td><span class="pill lunar">Total Lunar</span></td><td>Sagittarius</td><td>3rd</td><td>Sagittarius–Gemini (3rd/9th)</td>
+</tr>
+
+<tr data-year="2021" data-house="9th" data-sign="Gemini" data-axis="Gemini–Sagittarius (9th/3rd)">
+  <td class="year">2021</td><td>2021-06-10</td><td><span class="pill solar">Annular Solar</span></td><td>Gemini</td><td>9th</td><td>Gemini–Sagittarius (9th/3rd)</td>
+</tr>
+
+<tr data-year="2021" data-house="8th" data-sign="Taurus" data-axis="Taurus–Scorpio (8th/2nd)">
+  <td class="year">2021</td><td>2021-11-19</td><td><span class="pill lunar">Partial Lunar</span></td><td>Taurus</td><td>8th</td><td>Taurus–Scorpio (8th/2nd)</td>
+</tr>
+
+<tr data-year="2021" data-house="3rd" data-sign="Sagittarius" data-axis="Sagittarius–Gemini (3rd/9th)">
+  <td class="year">2021</td><td>2021-12-04</td><td><span class="pill solar">Total Solar</span></td><td>Sagittarius</td><td>3rd</td><td>Sagittarius–Gemini (3rd/9th)</td>
+</tr>
+
+<tr data-year="2022" data-house="8th" data-sign="Taurus" data-axis="Taurus–Scorpio (8th/2nd)">
+  <td class="year">2022</td><td>2022-04-30</td><td><span class="pill solar">Partial Solar</span></td><td>Taurus</td><td>8th</td><td>Taurus–Scorpio (8th/2nd)</td>
+</tr>
+
+<tr data-year="2022" data-house="2nd" data-sign="Scorpio" data-axis="Scorpio–Taurus (2nd/8th)">
+  <td class="year">2022</td><td>2022-05-16</td><td><span class="pill lunar">Total Lunar</span></td><td>Scorpio</td><td>2nd</td><td>Scorpio–Taurus (2nd/8th)</td>
+</tr>
+
+<tr data-year="2022" data-house="2nd" data-sign="Scorpio" data-axis="Scorpio–Taurus (2nd/8th)">
+  <td class="year">2022</td><td>2022-10-25</td><td><span class="pill solar">Partial Solar</span></td><td>Scorpio</td><td>2nd</td><td>Scorpio–Taurus (2nd/8th)</td>
+</tr>
+
+<tr data-year="2022" data-house="8th" data-sign="Taurus" data-axis="Taurus–Scorpio (8th/2nd)">
+  <td class="year">2022</td><td>2022-11-08</td><td><span class="pill lunar">Total Lunar</span></td><td>Taurus</td><td>8th</td><td>Taurus–Scorpio (8th/2nd)</td>
+</tr>
+
+<tr data-year="2023" data-house="7th" data-sign="Aries" data-axis="Aries–Libra (7th/1st)">
+  <td class="year">2023</td><td>2023-04-20</td><td><span class="pill solar">Hybrid Solar</span></td><td>Aries</td><td>7th</td><td>Aries–Libra (7th/1st)</td>
+</tr>
+
+<tr data-year="2023" data-house="2nd" data-sign="Scorpio" data-axis="Scorpio–Taurus (2nd/8th)">
+  <td class="year">2023</td><td>2023-05-05</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Scorpio</td><td>2nd</td><td>Scorpio–Taurus (2nd/8th)</td>
+</tr>
+
+<tr data-year="2023" data-house="1st" data-sign="Libra" data-axis="Libra–Aries (1st/7th)">
+  <td class="year">2023</td><td>2023-10-14</td><td><span class="pill solar">Annular Solar</span></td><td>Libra</td><td>1st</td><td>Libra–Aries (1st/7th)</td>
+</tr>
+
+<tr data-year="2023" data-house="8th" data-sign="Taurus" data-axis="Taurus–Scorpio (8th/2nd)">
+  <td class="year">2023</td><td>2023-10-28</td><td><span class="pill lunar">Partial Lunar</span></td><td>Taurus</td><td>8th</td><td>Taurus–Scorpio (8th/2nd)</td>
+</tr>
+
+<tr data-year="2024" data-house="1st" data-sign="Libra" data-axis="Libra–Aries (1st/7th)">
+  <td class="year">2024</td><td>2024-03-25</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Libra</td><td>1st</td><td>Libra–Aries (1st/7th)</td>
+</tr>
+
+<tr data-year="2024" data-house="7th" data-sign="Aries" data-axis="Aries–Libra (7th/1st)">
+  <td class="year">2024</td><td>2024-04-08</td><td><span class="pill solar">Total Solar</span></td><td>Aries</td><td>7th</td><td>Aries–Libra (7th/1st)</td>
+</tr>
+
+<tr data-year="2024" data-house="6th" data-sign="Pisces" data-axis="Pisces–Virgo (6th/12th)">
+  <td class="year">2024</td><td>2024-09-18</td><td><span class="pill lunar">Partial Lunar</span></td><td>Pisces</td><td>6th</td><td>Pisces–Virgo (6th/12th)</td>
+</tr>
+
+<tr data-year="2024" data-house="1st" data-sign="Libra" data-axis="Libra–Aries (1st/7th)">
+  <td class="year">2024</td><td>2024-10-02</td><td><span class="pill solar">Annular Solar</span></td><td>Libra</td><td>1st</td><td>Libra–Aries (1st/7th)</td>
+</tr>
+
+<tr data-year="2025" data-house="12th" data-sign="Virgo" data-axis="Virgo–Pisces (12th/6th)">
+  <td class="year">2025</td><td>2025-03-14</td><td><span class="pill lunar">Total Lunar</span></td><td>Virgo</td><td>12th</td><td>Virgo–Pisces (12th/6th)</td>
+</tr>
+
+<tr data-year="2025" data-house="7th" data-sign="Aries" data-axis="Aries–Libra (7th/1st)">
+  <td class="year">2025</td><td>2025-03-29</td><td><span class="pill solar">Partial Solar</span></td><td>Aries</td><td>7th</td><td>Aries–Libra (7th/1st)</td>
+</tr>
+
+<tr data-year="2025" data-house="6th" data-sign="Pisces" data-axis="Pisces–Virgo (6th/12th)">
+  <td class="year">2025</td><td>2025-09-07</td><td><span class="pill lunar">Total Lunar</span></td><td>Pisces</td><td>6th</td><td>Pisces–Virgo (6th/12th)</td>
+</tr>
+
+<tr data-year="2025" data-house="12th" data-sign="Virgo" data-axis="Virgo–Pisces (12th/6th)">
+  <td class="year">2025</td><td>2025-09-21</td><td><span class="pill solar">Partial Solar</span></td><td>Virgo</td><td>12th</td><td>Virgo–Pisces (12th/6th)</td>
+</tr>
+
+<tr data-year="2026" data-house="5th" data-sign="Aquarius" data-axis="Aquarius–Leo (5th/11th)">
+  <td class="year">2026</td><td>2026-02-17</td><td><span class="pill solar">Annular Solar</span></td><td>Aquarius</td><td>5th</td><td>Aquarius–Leo (5th/11th)</td>
+</tr>
+
+<tr data-year="2026" data-house="12th" data-sign="Virgo" data-axis="Virgo–Pisces (12th/6th)">
+  <td class="year">2026</td><td>2026-03-03</td><td><span class="pill lunar">Total Lunar</span></td><td>Virgo</td><td>12th</td><td>Virgo–Pisces (12th/6th)</td>
+</tr>
+
+<tr data-year="2026" data-house="11th" data-sign="Leo" data-axis="Leo–Aquarius (11th/5th)">
+  <td class="year">2026</td><td>2026-08-12</td><td><span class="pill solar">Total Solar</span></td><td>Leo</td><td>11th</td><td>Leo–Aquarius (11th/5th)</td>
+</tr>
+
+<tr data-year="2026" data-house="6th" data-sign="Pisces" data-axis="Pisces–Virgo (6th/12th)">
+  <td class="year">2026</td><td>2026-08-28</td><td><span class="pill lunar">Partial Lunar</span></td><td>Pisces</td><td>6th</td><td>Pisces–Virgo (6th/12th)</td>
+</tr>
+
+<tr data-year="2027" data-house="5th" data-sign="Aquarius" data-axis="Aquarius–Leo (5th/11th)">
+  <td class="year">2027</td><td>2027-02-06</td><td><span class="pill solar">Annular Solar</span></td><td>Aquarius</td><td>5th</td><td>Aquarius–Leo (5th/11th)</td>
+</tr>
+
+<tr data-year="2027" data-house="12th" data-sign="Virgo" data-axis="Virgo–Pisces (12th/6th)">
+  <td class="year">2027</td><td>2027-02-20</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Virgo</td><td>12th</td><td>Virgo–Pisces (12th/6th)</td>
+</tr>
+
+<tr data-year="2027" data-house="4th" data-sign="Capricorn" data-axis="Capricorn–Cancer (4th/10th)">
+  <td class="year">2027</td><td>2027-07-18</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Capricorn</td><td>4th</td><td>Capricorn–Cancer (4th/10th)</td>
+</tr>
+
+<tr data-year="2027" data-house="11th" data-sign="Leo" data-axis="Leo–Aquarius (11th/5th)">
+  <td class="year">2027</td><td>2027-08-02</td><td><span class="pill solar">Total Solar</span></td><td>Leo</td><td>11th</td><td>Leo–Aquarius (11th/5th)</td>
+</tr>
+
+<tr data-year="2027" data-house="5th" data-sign="Aquarius" data-axis="Aquarius–Leo (5th/11th)">
+  <td class="year">2027</td><td>2027-08-17</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Aquarius</td><td>5th</td><td>Aquarius–Leo (5th/11th)</td>
+</tr>
+
+<tr data-year="2028" data-house="10th" data-sign="Cancer" data-axis="Cancer–Capricorn (10th/4th)">
+  <td class="year">2028</td><td>2028-01-12</td><td><span class="pill lunar">Partial Lunar</span></td><td>Cancer</td><td>10th</td><td>Cancer–Capricorn (10th/4th)</td>
+</tr>
+
+<tr data-year="2028" data-house="5th" data-sign="Aquarius" data-axis="Aquarius–Leo (5th/11th)">
+  <td class="year">2028</td><td>2028-01-26</td><td><span class="pill solar">Annular Solar</span></td><td>Aquarius</td><td>5th</td><td>Aquarius–Leo (5th/11th)</td>
+</tr>
+
+<tr data-year="2028" data-house="4th" data-sign="Capricorn" data-axis="Capricorn–Cancer (4th/10th)">
+  <td class="year">2028</td><td>2028-07-06</td><td><span class="pill lunar">Partial Lunar</span></td><td>Capricorn</td><td>4th</td><td>Capricorn–Cancer (4th/10th)</td>
+</tr>
+
+<tr data-year="2028" data-house="10th" data-sign="Cancer" data-axis="Cancer–Capricorn (10th/4th)">
+  <td class="year">2028</td><td>2028-07-22</td><td><span class="pill solar">Total Solar</span></td><td>Cancer</td><td>10th</td><td>Cancer–Capricorn (10th/4th)</td>
+</tr>
+
+<tr data-year="2028" data-house="10th" data-sign="Cancer" data-axis="Cancer–Capricorn (10th/4th)">
+  <td class="year">2028</td><td>2028-12-31</td><td><span class="pill lunar">Total Lunar</span></td><td>Cancer</td><td>10th</td><td>Cancer–Capricorn (10th/4th)</td>
+</tr>
+
+<tr data-year="2029" data-house="4th" data-sign="Capricorn" data-axis="Capricorn–Cancer (4th/10th)">
+  <td class="year">2029</td><td>2029-01-14</td><td><span class="pill solar">Partial Solar</span></td><td>Capricorn</td><td>4th</td><td>Capricorn–Cancer (4th/10th)</td>
+</tr>
+
+<tr data-year="2029" data-house="9th" data-sign="Gemini" data-axis="Gemini–Sagittarius (9th/3rd)">
+  <td class="year">2029</td><td>2029-06-12</td><td><span class="pill solar">Partial Solar</span></td><td>Gemini</td><td>9th</td><td>Gemini–Sagittarius (9th/3rd)</td>
+</tr>
+
+<tr data-year="2029" data-house="4th" data-sign="Capricorn" data-axis="Capricorn–Cancer (4th/10th)">
+  <td class="year">2029</td><td>2029-06-26</td><td><span class="pill lunar">Total Lunar</span></td><td>Capricorn</td><td>4th</td><td>Capricorn–Cancer (4th/10th)</td>
+</tr>
+
+<tr data-year="2029" data-house="10th" data-sign="Cancer" data-axis="Cancer–Capricorn (10th/4th)">
+  <td class="year">2029</td><td>2029-07-11</td><td><span class="pill solar">Partial Solar</span></td><td>Cancer</td><td>10th</td><td>Cancer–Capricorn (10th/4th)</td>
+</tr>
+
+<tr data-year="2029" data-house="3rd" data-sign="Sagittarius" data-axis="Sagittarius–Gemini (3rd/9th)">
+  <td class="year">2029</td><td>2029-12-05</td><td><span class="pill solar">Partial Solar</span></td><td>Sagittarius</td><td>3rd</td><td>Sagittarius–Gemini (3rd/9th)</td>
+</tr>
+
+<tr data-year="2029" data-house="9th" data-sign="Gemini" data-axis="Gemini–Sagittarius (9th/3rd)">
+  <td class="year">2029</td><td>2029-12-20</td><td><span class="pill lunar">Total Lunar</span></td><td>Gemini</td><td>9th</td><td>Gemini–Sagittarius (9th/3rd)</td>
+</tr>
+
+<tr data-year="2030" data-house="9th" data-sign="Gemini" data-axis="Gemini–Sagittarius (9th/3rd)">
+  <td class="year">2030</td><td>2030-06-01</td><td><span class="pill solar">Annular Solar</span></td><td>Gemini</td><td>9th</td><td>Gemini–Sagittarius (9th/3rd)</td>
+</tr>
+
+<tr data-year="2030" data-house="3rd" data-sign="Sagittarius" data-axis="Sagittarius–Gemini (3rd/9th)">
+  <td class="year">2030</td><td>2030-06-15</td><td><span class="pill lunar">Partial Lunar</span></td><td>Sagittarius</td><td>3rd</td><td>Sagittarius–Gemini (3rd/9th)</td>
+</tr>
+
+<tr data-year="2030" data-house="3rd" data-sign="Sagittarius" data-axis="Sagittarius–Gemini (3rd/9th)">
+  <td class="year">2030</td><td>2030-11-25</td><td><span class="pill solar">Total Solar</span></td><td>Sagittarius</td><td>3rd</td><td>Sagittarius–Gemini (3rd/9th)</td>
+</tr>
+
+<tr data-year="2030" data-house="9th" data-sign="Gemini" data-axis="Gemini–Sagittarius (9th/3rd)">
+  <td class="year">2030</td><td>2030-12-09</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Gemini</td><td>9th</td><td>Gemini–Sagittarius (9th/3rd)</td>
+</tr>
+
+<tr data-year="2031" data-house="2nd" data-sign="Scorpio" data-axis="Scorpio–Taurus (2nd/8th)">
+  <td class="year">2031</td><td>2031-05-07</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Scorpio</td><td>2nd</td><td>Scorpio–Taurus (2nd/8th)</td>
+</tr>
+
+<tr data-year="2031" data-house="9th" data-sign="Gemini" data-axis="Gemini–Sagittarius (9th/3rd)">
+  <td class="year">2031</td><td>2031-05-21</td><td><span class="pill solar">Annular Solar</span></td><td>Gemini</td><td>9th</td><td>Gemini–Sagittarius (9th/3rd)</td>
+</tr>
+
+<tr data-year="2031" data-house="3rd" data-sign="Sagittarius" data-axis="Sagittarius–Gemini (3rd/9th)">
+  <td class="year">2031</td><td>2031-06-05</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Sagittarius</td><td>3rd</td><td>Sagittarius–Gemini (3rd/9th)</td>
+</tr>
+
+<tr data-year="2031" data-house="8th" data-sign="Taurus" data-axis="Taurus–Scorpio (8th/2nd)">
+  <td class="year">2031</td><td>2031-10-30</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Taurus</td><td>8th</td><td>Taurus–Scorpio (8th/2nd)</td>
+</tr>
+
+<tr data-year="2031" data-house="2nd" data-sign="Scorpio" data-axis="Scorpio–Taurus (2nd/8th)">
+  <td class="year">2031</td><td>2031-11-14</td><td><span class="pill solar">Hybrid Solar</span></td><td>Scorpio</td><td>2nd</td><td>Scorpio–Taurus (2nd/8th)</td>
+</tr>
+
+<tr data-year="2032" data-house="2nd" data-sign="Scorpio" data-axis="Scorpio–Taurus (2nd/8th)">
+  <td class="year">2032</td><td>2032-04-25</td><td><span class="pill lunar">Total Lunar</span></td><td>Scorpio</td><td>2nd</td><td>Scorpio–Taurus (2nd/8th)</td>
+</tr>
+
+<tr data-year="2032" data-house="8th" data-sign="Taurus" data-axis="Taurus–Scorpio (8th/2nd)">
+  <td class="year">2032</td><td>2032-05-09</td><td><span class="pill solar">Annular Solar</span></td><td>Taurus</td><td>8th</td><td>Taurus–Scorpio (8th/2nd)</td>
+</tr>
+
+<tr data-year="2032" data-house="7th" data-sign="Aries" data-axis="Aries–Libra (7th/1st)">
+  <td class="year">2032</td><td>2032-10-18</td><td><span class="pill lunar">Total Lunar</span></td><td>Aries</td><td>7th</td><td>Aries–Libra (7th/1st)</td>
+</tr>
+
+<tr data-year="2032" data-house="2nd" data-sign="Scorpio" data-axis="Scorpio–Taurus (2nd/8th)">
+  <td class="year">2032</td><td>2032-11-03</td><td><span class="pill solar">Partial Solar</span></td><td>Scorpio</td><td>2nd</td><td>Scorpio–Taurus (2nd/8th)</td>
+</tr>
+
+<tr data-year="2033" data-house="7th" data-sign="Aries" data-axis="Aries–Libra (7th/1st)">
+  <td class="year">2033</td><td>2033-03-30</td><td><span class="pill solar">Total Solar</span></td><td>Aries</td><td>7th</td><td>Aries–Libra (7th/1st)</td>
+</tr>
+
+<tr data-year="2033" data-house="1st" data-sign="Libra" data-axis="Libra–Aries (1st/7th)">
+  <td class="year">2033</td><td>2033-04-14</td><td><span class="pill lunar">Total Lunar</span></td><td>Libra</td><td>1st</td><td>Libra–Aries (1st/7th)</td>
+</tr>
+
+<tr data-year="2033" data-house="1st" data-sign="Libra" data-axis="Libra–Aries (1st/7th)">
+  <td class="year">2033</td><td>2033-09-23</td><td><span class="pill solar">Partial Solar</span></td><td>Libra</td><td>1st</td><td>Libra–Aries (1st/7th)</td>
+</tr>
+
+<tr data-year="2033" data-house="7th" data-sign="Aries" data-axis="Aries–Libra (7th/1st)">
+  <td class="year">2033</td><td>2033-10-08</td><td><span class="pill lunar">Total Lunar</span></td><td>Aries</td><td>7th</td><td>Aries–Libra (7th/1st)</td>
+</tr>
+
+<tr data-year="2034" data-house="6th" data-sign="Pisces" data-axis="Pisces–Virgo (6th/12th)">
+  <td class="year">2034</td><td>2034-03-20</td><td><span class="pill solar">Total Solar</span></td><td>Pisces</td><td>6th</td><td>Pisces–Virgo (6th/12th)</td>
+</tr>
+
+<tr data-year="2034" data-house="1st" data-sign="Libra" data-axis="Libra–Aries (1st/7th)">
+  <td class="year">2034</td><td>2034-04-03</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Libra</td><td>1st</td><td>Libra–Aries (1st/7th)</td>
+</tr>
+
+<tr data-year="2034" data-house="12th" data-sign="Virgo" data-axis="Virgo–Pisces (12th/6th)">
+  <td class="year">2034</td><td>2034-09-12</td><td><span class="pill solar">Annular Solar</span></td><td>Virgo</td><td>12th</td><td>Virgo–Pisces (12th/6th)</td>
+</tr>
+
+<tr data-year="2034" data-house="7th" data-sign="Aries" data-axis="Aries–Libra (7th/1st)">
+  <td class="year">2034</td><td>2034-09-28</td><td><span class="pill lunar">Partial Lunar</span></td><td>Aries</td><td>7th</td><td>Aries–Libra (7th/1st)</td>
+</tr>
+
+<tr data-year="2035" data-house="12th" data-sign="Virgo" data-axis="Virgo–Pisces (12th/6th)">
+  <td class="year">2035</td><td>2035-02-22</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Virgo</td><td>12th</td><td>Virgo–Pisces (12th/6th)</td>
+</tr>
+
+<tr data-year="2035" data-house="6th" data-sign="Pisces" data-axis="Pisces–Virgo (6th/12th)">
+  <td class="year">2035</td><td>2035-03-10</td><td><span class="pill solar">Annular Solar</span></td><td>Pisces</td><td>6th</td><td>Pisces–Virgo (6th/12th)</td>
+</tr>
+
+<tr data-year="2035" data-house="6th" data-sign="Pisces" data-axis="Pisces–Virgo (6th/12th)">
+  <td class="year">2035</td><td>2035-08-19</td><td><span class="pill lunar">Partial Lunar</span></td><td>Pisces</td><td>6th</td><td>Pisces–Virgo (6th/12th)</td>
+</tr>
+
+<tr data-year="2035" data-house="12th" data-sign="Virgo" data-axis="Virgo–Pisces (12th/6th)">
+  <td class="year">2035</td><td>2035-09-02</td><td><span class="pill solar">Total Solar</span></td><td>Virgo</td><td>12th</td><td>Virgo–Pisces (12th/6th)</td>
+</tr>
+
+<tr data-year="2036" data-house="12th" data-sign="Virgo" data-axis="Virgo–Pisces (12th/6th)">
+  <td class="year">2036</td><td>2036-02-12</td><td><span class="pill lunar">Total Lunar</span></td><td>Virgo</td><td>12th</td><td>Virgo–Pisces (12th/6th)</td>
+</tr>
+
+<tr data-year="2036" data-house="6th" data-sign="Pisces" data-axis="Pisces–Virgo (6th/12th)">
+  <td class="year">2036</td><td>2036-02-27</td><td><span class="pill solar">Partial Solar</span></td><td>Pisces</td><td>6th</td><td>Pisces–Virgo (6th/12th)</td>
+</tr>
+
+<tr data-year="2036" data-house="11th" data-sign="Leo" data-axis="Leo–Aquarius (11th/5th)">
+  <td class="year">2036</td><td>2036-07-23</td><td><span class="pill solar">Partial Solar</span></td><td>Leo</td><td>11th</td><td>Leo–Aquarius (11th/5th)</td>
+</tr>
+
+<tr data-year="2036" data-house="5th" data-sign="Aquarius" data-axis="Aquarius–Leo (5th/11th)">
+  <td class="year">2036</td><td>2036-08-07</td><td><span class="pill lunar">Total Lunar</span></td><td>Aquarius</td><td>5th</td><td>Aquarius–Leo (5th/11th)</td>
+</tr>
+
+<tr data-year="2036" data-house="11th" data-sign="Leo" data-axis="Leo–Aquarius (11th/5th)">
+  <td class="year">2036</td><td>2036-08-21</td><td><span class="pill solar">Partial Solar</span></td><td>Leo</td><td>11th</td><td>Leo–Aquarius (11th/5th)</td>
+</tr>
+
+<tr data-year="2037" data-house="4th" data-sign="Capricorn" data-axis="Capricorn–Cancer (4th/10th)">
+  <td class="year">2037</td><td>2037-01-16</td><td><span class="pill solar">Partial Solar</span></td><td>Capricorn</td><td>4th</td><td>Capricorn–Cancer (4th/10th)</td>
+</tr>
+
+<tr data-year="2037" data-house="11th" data-sign="Leo" data-axis="Leo–Aquarius (11th/5th)">
+  <td class="year">2037</td><td>2037-02-01</td><td><span class="pill lunar">Total Lunar</span></td><td>Leo</td><td>11th</td><td>Leo–Aquarius (11th/5th)</td>
+</tr>
+
+<tr data-year="2037" data-house="10th" data-sign="Cancer" data-axis="Cancer–Capricorn (10th/4th)">
+  <td class="year">2037</td><td>2037-07-13</td><td><span class="pill solar">Total Solar</span></td><td>Cancer</td><td>10th</td><td>Cancer–Capricorn (10th/4th)</td>
+</tr>
+
+<tr data-year="2037" data-house="5th" data-sign="Aquarius" data-axis="Aquarius–Leo (5th/11th)">
+  <td class="year">2037</td><td>2037-07-27</td><td><span class="pill lunar">Partial Lunar</span></td><td>Aquarius</td><td>5th</td><td>Aquarius–Leo (5th/11th)</td>
+</tr>
+
+<tr data-year="2038" data-house="4th" data-sign="Capricorn" data-axis="Capricorn–Cancer (4th/10th)">
+  <td class="year">2038</td><td>2038-01-05</td><td><span class="pill solar">Annular Solar</span></td><td>Capricorn</td><td>4th</td><td>Capricorn–Cancer (4th/10th)</td>
+</tr>
+
+<tr data-year="2038" data-house="11th" data-sign="Leo" data-axis="Leo–Aquarius (11th/5th)">
+  <td class="year">2038</td><td>2038-01-21</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Leo</td><td>11th</td><td>Leo–Aquarius (11th/5th)</td>
+</tr>
+
+<tr data-year="2038" data-house="4th" data-sign="Capricorn" data-axis="Capricorn–Cancer (4th/10th)">
+  <td class="year">2038</td><td>2038-06-17</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Capricorn</td><td>4th</td><td>Capricorn–Cancer (4th/10th)</td>
+</tr>
+
+<tr data-year="2038" data-house="10th" data-sign="Cancer" data-axis="Cancer–Capricorn (10th/4th)">
+  <td class="year">2038</td><td>2038-07-02</td><td><span class="pill solar">Annular Solar</span></td><td>Cancer</td><td>10th</td><td>Cancer–Capricorn (10th/4th)</td>
+</tr>
+
+<tr data-year="2038" data-house="4th" data-sign="Capricorn" data-axis="Capricorn–Cancer (4th/10th)">
+  <td class="year">2038</td><td>2038-07-16</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Capricorn</td><td>4th</td><td>Capricorn–Cancer (4th/10th)</td>
+</tr>
+
+<tr data-year="2038" data-house="9th" data-sign="Gemini" data-axis="Gemini–Sagittarius (9th/3rd)">
+  <td class="year">2038</td><td>2038-12-12</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Gemini</td><td>9th</td><td>Gemini–Sagittarius (9th/3rd)</td>
+</tr>
+
+<tr data-year="2038" data-house="4th" data-sign="Capricorn" data-axis="Capricorn–Cancer (4th/10th)">
+  <td class="year">2038</td><td>2038-12-26</td><td><span class="pill solar">Total Solar</span></td><td>Capricorn</td><td>4th</td><td>Capricorn–Cancer (4th/10th)</td>
+</tr>
+
+<tr data-year="2039" data-house="3rd" data-sign="Sagittarius" data-axis="Sagittarius–Gemini (3rd/9th)">
+  <td class="year">2039</td><td>2039-06-07</td><td><span class="pill lunar">Partial Lunar</span></td><td>Sagittarius</td><td>3rd</td><td>Sagittarius–Gemini (3rd/9th)</td>
+</tr>
+
+<tr data-year="2039" data-house="10th" data-sign="Cancer" data-axis="Cancer–Capricorn (10th/4th)">
+  <td class="year">2039</td><td>2039-06-21</td><td><span class="pill solar">Annular Solar</span></td><td>Cancer</td><td>10th</td><td>Cancer–Capricorn (10th/4th)</td>
+</tr>
+
+<tr data-year="2039" data-house="9th" data-sign="Gemini" data-axis="Gemini–Sagittarius (9th/3rd)">
+  <td class="year">2039</td><td>2039-12-01</td><td><span class="pill lunar">Partial Lunar</span></td><td>Gemini</td><td>9th</td><td>Gemini–Sagittarius (9th/3rd)</td>
+</tr>
+
+<tr data-year="2039" data-house="3rd" data-sign="Sagittarius" data-axis="Sagittarius–Gemini (3rd/9th)">
+  <td class="year">2039</td><td>2039-12-15</td><td><span class="pill solar">Total Solar</span></td><td>Sagittarius</td><td>3rd</td><td>Sagittarius–Gemini (3rd/9th)</td>
+</tr>
+
+<tr data-year="2040" data-house="8th" data-sign="Taurus" data-axis="Taurus–Scorpio (8th/2nd)">
+  <td class="year">2040</td><td>2040-05-11</td><td><span class="pill solar">Partial Solar</span></td><td>Taurus</td><td>8th</td><td>Taurus–Scorpio (8th/2nd)</td>
+</tr>
+
+<tr data-year="2040" data-house="3rd" data-sign="Sagittarius" data-axis="Sagittarius–Gemini (3rd/9th)">
+  <td class="year">2040</td><td>2040-05-26</td><td><span class="pill lunar">Total Lunar</span></td><td>Sagittarius</td><td>3rd</td><td>Sagittarius–Gemini (3rd/9th)</td>
+</tr>
+
+<tr data-year="2040" data-house="2nd" data-sign="Scorpio" data-axis="Scorpio–Taurus (2nd/8th)">
+  <td class="year">2040</td><td>2040-11-04</td><td><span class="pill solar">Partial Solar</span></td><td>Scorpio</td><td>2nd</td><td>Scorpio–Taurus (2nd/8th)</td>
+</tr>
+
+<tr data-year="2040" data-house="9th" data-sign="Gemini" data-axis="Gemini–Sagittarius (9th/3rd)">
+  <td class="year">2040</td><td>2040-11-19</td><td><span class="pill lunar">Total Lunar</span></td><td>Gemini</td><td>9th</td><td>Gemini–Sagittarius (9th/3rd)</td>
+</tr>
+
+<tr data-year="2041" data-house="8th" data-sign="Taurus" data-axis="Taurus–Scorpio (8th/2nd)">
+  <td class="year">2041</td><td>2041-04-30</td><td><span class="pill solar">Total Solar</span></td><td>Taurus</td><td>8th</td><td>Taurus–Scorpio (8th/2nd)</td>
+</tr>
+
+<tr data-year="2041" data-house="3rd" data-sign="Sagittarius" data-axis="Sagittarius–Gemini (3rd/9th)">
+  <td class="year">2041</td><td>2041-05-16</td><td><span class="pill lunar">Partial Lunar</span></td><td>Sagittarius</td><td>3rd</td><td>Sagittarius–Gemini (3rd/9th)</td>
+</tr>
+
+<tr data-year="2041" data-house="2nd" data-sign="Scorpio" data-axis="Scorpio–Taurus (2nd/8th)">
+  <td class="year">2041</td><td>2041-10-25</td><td><span class="pill solar">Annular Solar</span></td><td>Scorpio</td><td>2nd</td><td>Scorpio–Taurus (2nd/8th)</td>
+</tr>
+
+<tr data-year="2041" data-house="8th" data-sign="Taurus" data-axis="Taurus–Scorpio (8th/2nd)">
+  <td class="year">2041</td><td>2041-11-08</td><td><span class="pill lunar">Partial Lunar</span></td><td>Taurus</td><td>8th</td><td>Taurus–Scorpio (8th/2nd)</td>
+</tr>
+
+<tr data-year="2042" data-house="1st" data-sign="Libra" data-axis="Libra–Aries (1st/7th)">
+  <td class="year">2042</td><td>2042-04-06</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Libra</td><td>1st</td><td>Libra–Aries (1st/7th)</td>
+</tr>
+
+<tr data-year="2042" data-house="8th" data-sign="Taurus" data-axis="Taurus–Scorpio (8th/2nd)">
+  <td class="year">2042</td><td>2042-04-20</td><td><span class="pill solar">Total Solar</span></td><td>Taurus</td><td>8th</td><td>Taurus–Scorpio (8th/2nd)</td>
+</tr>
+
+<tr data-year="2042" data-house="7th" data-sign="Aries" data-axis="Aries–Libra (7th/1st)">
+  <td class="year">2042</td><td>2042-09-29</td><td><span class="pill lunar">Penumbral Lunar</span></td><td>Aries</td><td>7th</td><td>Aries–Libra (7th/1st)</td>
+</tr>
+
+<tr data-year="2042" data-house="1st" data-sign="Libra" data-axis="Libra–Aries (1st/7th)">
+  <td class="year">2042</td><td>2042-10-14</td><td><span class="pill solar">Annular Solar</span></td><td>Libra</td><td>1st</td><td>Libra–Aries (1st/7th)</td>
+</tr>
+
+<tr data-year="2042" data-house="8th" data-sign="Taurus" data-axis="Taurus–Scorpio (8th/2nd)">
+  <td class="year">2042</td><td>2042-10-29</td><td><span class="pill lunar">Almost Lunar</span></td><td>Taurus</td><td>8th</td><td>Taurus–Scorpio (8th/2nd)</td>
+</tr>
+
+<tr data-year="2043" data-house="1st" data-sign="Libra" data-axis="Libra–Aries (1st/7th)">
+  <td class="year">2043</td><td>2043-03-26</td><td><span class="pill lunar">Total Lunar</span></td><td>Libra</td><td>1st</td><td>Libra–Aries (1st/7th)</td>
+</tr>
+
+<tr data-year="2043" data-house="7th" data-sign="Aries" data-axis="Aries–Libra (7th/1st)">
+  <td class="year">2043</td><td>2043-04-09</td><td><span class="pill solar">Total Solar</span></td><td>Aries</td><td>7th</td><td>Aries–Libra (7th/1st)</td>
+</tr>
+
+<tr data-year="2043" data-house="7th" data-sign="Aries" data-axis="Aries–Libra (7th/1st)">
+  <td class="year">2043</td><td>2043-09-19</td><td><span class="pill lunar">Total Lunar</span></td><td>Aries</td><td>7th</td><td>Aries–Libra (7th/1st)</td>
+</tr>
+
+<tr data-year="2043" data-house="1st" data-sign="Libra" data-axis="Libra–Aries (1st/7th)">
+  <td class="year">2043</td><td>2043-10-03</td><td><span class="pill solar">Annular Solar</span></td><td>Libra</td><td>1st</td><td>Libra–Aries (1st/7th)</td>
+</tr>
+</tbody>
+  </table></div>
+  
+</section>
+</main>
+<script>
+const search = document.getElementById('search');
+const year = document.getElementById('year');
+const house = document.getElementById('house');
+const rows = [...document.querySelectorAll('#eclipseTable tbody tr')];
+function applyFilters() {
+  const q = search.value.toLowerCase().trim();
+  const y = year.value;
+  const h = house.value;
+  rows.forEach(row => {
+    const text = row.innerText.toLowerCase();
+    const ok = (!q || text.includes(q)) && (!y || row.dataset.year === y) && (!h || row.dataset.house === h);
+    row.style.display = ok ? '' : 'none';
+  });
+}
+[search, year, house].forEach(el => el.addEventListener('input', applyFilters));
+</script>
+</body>
+</html>
